@@ -9,7 +9,7 @@ High-temperature superconductivity in the cuprates has been at the heart of many
 
 ## Numerical Analysis
 
-Bla
+The present section is a description of the numerical analysis behind this thesis. While numeric computing—including plotting and graphing—was initially performed on MATLAB, it was converted to Python for portability and shareability. The images used here come from the figures generated in Python. For more information on the theoretical background of this work and to see all derivations, please consult the [full thesis](bolduc-2019-determination-of-the-berry-phase-in-the-staggered-loop-current-model-of-the-pseudogap-in-the-cuprates.pdf).
 
 ### 1　Semiclassical approach
 
