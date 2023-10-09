@@ -1,7 +1,6 @@
 # Determination of the Berry Phase in the Staggered Loop Current Model of the Pseudogap in the Cuprates.
 
-By Etienne Bolduc, Department of Physics, McGill University, Montreal, Canada. (August 2019)
-
+By Etienne Bolduc, Department of Physics, McGill University, Montreal, Canada. (August 2019)  
 A thesis submitted to McGill University in partial fulfillment of the requirements of the degree of Master of Science.
 
 ## Abstract
