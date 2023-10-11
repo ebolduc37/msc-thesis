@@ -72,12 +72,14 @@ BZ is taken to be the set a1 [−π, π] × a1 [−π, π]. The momentum-space o
 ```
 
 ```math
-\textbf{H}_{1}(\textbf{k}) =
+\begin{gather}
+\textbf{H}_{1}(\textbf{k}) = \\
 \begin{bmatrix}
 0 & 2 i R_{pd} c_x & 2i R_{pd} c_y \\
 -2i R_{pd} s_x & 0 & -4i \phi R_{pp} s_x c_y \\
 -2i R_{pd} s_y & 4i \phi R_{pp} c_x s_y & 0
 \end{bmatrix}
+\end{gather}
 ```
 
 which leads to
