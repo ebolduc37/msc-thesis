@@ -52,12 +52,14 @@ BZ is taken to be the set a1 [−π, π] × a1 [−π, π]. The momentum-space o
 ```
 
 ```math
-\textbf{H}_{0}(\textbf{k}) =
-\begin{bmatrix}
+\begin{align}
+& \textbf{H}_{0}(\textbf{k}) = \\
+& \begin{bmatrix}
 \epsilon_d & 2 t_{pd} s_x & -2 t_{pd} s_y \\
 2 t_{pd} s_x & \epsilon_p & 4 t_{pp} s_x s_y \\
 -2 t_{pd} s_y & 4 t_{pp} s_x s_y & \epsilon_p
 \end{bmatrix}
+\end{align}
 ```
 
 ##### Mean-Field Decomposition of the Charge Order
@@ -72,14 +74,14 @@ BZ is taken to be the set a1 [−π, π] × a1 [−π, π]. The momentum-space o
 ```
 
 ```math
-\begin{gather}
-\textbf{H}_{1}(\textbf{k}) = \\
-\begin{bmatrix}
+\begin{align}
+& \textbf{H}_{1}(\textbf{k}) = \\
+& \begin{bmatrix}
 0 & 2 i R_{pd} c_x & 2i R_{pd} c_y \\
 -2i R_{pd} s_x & 0 & -4i \phi R_{pp} s_x c_y \\
 -2i R_{pd} s_y & 4i \phi R_{pp} c_x s_y & 0
 \end{bmatrix}
-\end{gather}
+\end{align}
 ```
 
 which leads to
