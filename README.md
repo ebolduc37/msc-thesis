@@ -51,7 +51,36 @@ BZ is taken to be the set a1 [−π, π] × a1 [−π, π]. The momentum-space o
 \overline{\Psi}_\textbf{k}
 ```
 
+```math
+\textbf{H}_{0}(\textbf{k}) =
+\begin{bmatrix}
+\epsilon_d & 2 t_{pd} s_x & -2 t_{pd} s_y \\
+2 t_{pd} s_x & \epsilon_p & 4 t_{pp} s_x s_y \\
+-2 t_{pd} s_y & 4 t_{pp} s_x s_y & \epsilon_p
+\end{bmatrix}
+```
+
 ##### Mean-Field Decomposition of the Charge Order
+
+```math
+\hat{H}_{MF}^\prime = \sum_{\textbf{k} \in BZ'} \overline{\Psi}_\textbf{k}^\dagger
+\begin{bmatrix}
+\widetilde{\boldsymbol{\epsilon}} & \textbf{H}_{1}(\textbf{k}) \\
+\textbf{H}_{1}^\dagger(\textbf{k}) & \widetilde{\boldsymbol{\epsilon}}
+\end{bmatrix}
+\overline{\Psi}_\textbf{k}
+```
+
+```math
+\textbf{H}_{1}(\textbf{k}) =
+\begin{bmatrix}
+0 & 2 i R_{pd} c_x & 2i R_{pd} c_y \\
+-2i R_{pd} s_x & 0 & -4i \phi R_{pp} s_x c_y \\
+-2i R_{pd} s_y & 4i \phi R_{pp} c_x s_y & 0
+\end{bmatrix}
+```
+
+which leads to
 
 ```math
 \hat{H}_{MF} = \sum_{\textbf{k} \in BZ'} \overline{\Psi}_\textbf{k}^\dagger \textbf{H}_{MF}(\textbf{k}) \overline{\Psi}_\textbf{k}
