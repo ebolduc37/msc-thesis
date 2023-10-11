@@ -127,7 +127,7 @@ with
 \end{bmatrix}
 ```
 
-where $\epsilon_ d \rightarrow \epsilon_ d + \widetilde{\epsilon}_ d \equiv \varepsilon_ d$ and $\epsilon_ p \rightarrow \epsilon_ p + \widetilde{\epsilon}_ p \equiv \varepsilon_ p$ in $\textbf{H}_{0}(\textbf{k})$.
+where $\epsilon_ d \rightarrow \epsilon_ \alpha + \widetilde{\epsilon}_ \alpha \equiv \varepsilon_ \alpha$ in $\textbf{H}_{0}(\textbf{k})$.
 
 #### 1.2　Fermi Surface
 
