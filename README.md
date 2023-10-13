@@ -51,17 +51,16 @@ where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consistin
 \end{align}
 ```
 
-Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$.
+Take note that $\textbf{H}_{0}(\textbf{k})$ is periodic with period $2\pi a$ in the $k^x$ and in the $k^y$ directions.
 
-![H_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/533e16af-a1cc-426e-8782-79ac6a75b741)
-![diff_E_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/a095bb10-cdce-4100-9303-ad42d7cafd6e)
+Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$. The energy gap between the highest energy band of $\textbf{H}_{0}(\textbf{k})$ and the two other bands can be observed from the plot. Additionally, the property that $E_n (\textbf{k} + \textbf{Q}) = E_n (\textbf{k})$ if and only if $\textbf{k} \in \partial BZ^\prime$ can be observed numerically by inspecting the points where $| E_n (\textbf{k}) - E_n (\textbf{k} + \textbf{Q}) | < 0.01$.
 
-
-MAYBE SHOW THE ENERGY GAP? AND E(k) = E(k+Q)
+![H_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/117cb73c-5d12-43aa-ae1d-01d2ab6c5566)
+![diff_E_n](https://github.com/ebolduc37/msc-thesis/assets/44382376/805d5a02-5b1e-4fc0-a4bc-66390c9cbbb5)
 
 ##### 1.1.2　Mean-Field Decomposition of the Charge Order
 
-From the charge order $\hat{H}^\prime$ taking into consideration the intraorbital and interorbital interactions in position space, it is possible to obtain the mean-field version $\hat{H}^\prime_{MF}$ in terms of circulating currents in momentum-space. One the one hand, the intraorbital interactions lead to Hartree shifts to the orbital energies which merely renormalize in $\epsilon_d$ and $\epsilon_p$. On the other hand, the interorbital interactions can be decomposed in terms of the circulating currents where the sign depends on the direction of the current flow. After some calculations, the mean-field decomposition of the charge order can be expressed as
+From the charge order $\hat{H}^\prime$ taking into consideration the intraorbital and interorbital interactions in position space, it is possible to obtain the mean-field version $\hat{H}^\prime_{MF}$ in terms of circulating currents in momentum-space. On the one hand, the intraorbital interactions lead to Hartree shifts to the orbital energies which merely renormalize in $\epsilon_d$ and $\epsilon_p$. On the other hand, the interorbital interactions can be decomposed in terms of the circulating currents where the sign depends on the direction of the current flow. After some calculations, the mean-field decomposition of the charge order can be expressed as
 
 ```math
 \hat{H}_{MF}^\prime = \sum_{\textbf{k} \in BZ'} \overline{\Psi}_\textbf{k}^\dagger
@@ -103,6 +102,9 @@ where letting $\epsilon_ d \rightarrow \epsilon_ \alpha + \widetilde{\epsilon}_ 
 \textbf{H}_{1}^\dagger(\textbf{k}) & \textbf{H}_{0}(\textbf{k} + \textbf{Q})
 \end{bmatrix}.
 ```
+
+![H_MF_bands_all](https://github.com/ebolduc37/msc-thesis/assets/44382376/6a7fc6f8-8d2e-4199-a2bf-50c97aa9d7f4)
+![H_MF_bands_high](https://github.com/ebolduc37/msc-thesis/assets/44382376/57951b05-93c6-4da7-a747-0a3bf1bea5cd)
 
 #### 1.2　Fermi Surface
 
