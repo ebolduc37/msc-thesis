@@ -91,7 +91,7 @@ After applying the above framework to obtain the mean-field version of $\hat{H}^
 \overline{\Psi}_\textbf{k}
 ```
 
-where an explicit expression for $\textbf{H}_ {1}(\textbf{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $\epsilon_d = V_ {pd} + 2V_ {pp}$ and $\epsilon_p = 2V_{pd}$.
+where an explicit expression for $\textbf{H}_ {1}(\textbf{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $\widetilde{\epsilon}_ d = V_ {pd} + 2V_ {pp}$ in $\textrm{Cu}d_{x^2-y^2}$ and $\widetilde{\epsilon}_ p = 2V_{pd}$ in $\textrm{O}p_x$ and $\textrm{O}p_y$.
 
 The focus needs to be made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. Such current patterns have the particularity that all elements of $\textbf{H}_ {1}(\textbf{k})$ _after_ the gauge transformation are purely imaginary. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry, and the one investigated by Bulut _et al._ [7] shown in Figure 4.2 is one of them. The second current pattern can be obtained from the one in Figure 4.2 by merely inverting the current along $p–p$ bonds.
 
