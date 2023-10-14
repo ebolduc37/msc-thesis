@@ -101,7 +101,7 @@ i \lambda \textbf{V}^T (\textbf{k}) & \textbf{H}_{0}(\textbf{k} + \textbf{Q})
 \end{bmatrix}.
 ```
 
-Four points are of particular interest here: the points $k^ *$ such that $|k^ *_ x| = |k^ *_ y| = \tfrac{\pi}{2a}$, a set that we denote by $D$. These momenta correspond to the 2-fold degeneracy points of the high-energy subspace of $\textbf{H}_{MF}(\textbf{k})$ as seen in Figure ??.
+Four points are of particular interest here: the points $\textbf{k}^ *$ such that $|k^ *_ x| = |k^ *_ y| = \tfrac{\pi}{2a}$, a set that we denote by $D$. These momenta correspond to the 2-fold degeneracy points of the high-energy subspace of $\textbf{H}_{MF}(\textbf{k})$ as seen in Figure ??.
 
 ![H_MF_bands_all](https://github.com/ebolduc37/msc-thesis/assets/44382376/6a7fc6f8-8d2e-4199-a2bf-50c97aa9d7f4)
 ![H_MF_bands_high](https://github.com/ebolduc37/msc-thesis/assets/44382376/57951b05-93c6-4da7-a747-0a3bf1bea5cd)
