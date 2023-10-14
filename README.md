@@ -123,7 +123,7 @@ It is possible to evaluate numerically the Berry phase accumulated by an electro
 
 Special considerations must be taken in the presence of a Dirac point because numerical methods do not adequately work at discontinuous points. In the case of a two-level system in 2D, a mass term must be added to the Hamiltonian in order to evaluate the Berry phase. Given a small, finite value, the mass term provides a way to approximate the Dirac delta function located at the Dirac points in the Berry curvature. In such a way, numerical methods can approximate the Berry phase without any problem. In order to make this precise, the mass term should be small enough to make the delta function's weight negligible outside the area of integration whereas the grid resolution must be taken high enough to approximate around the peak accurately.
 
-To approach this problem, we must first rely on perturbation theory using the high-energy subspace. Considering that the matrix elements of $\textbf{V}(\textbf{k})$ are of the order of magnitude of 1 or lower for any $\textbf{k}$ and that $\lambda \ll 1$ under a typical parameter set, we take the unperturbed Hamiltonian to be
+To approach this problem, we must rely on perturbation theory. Considering that the matrix elements of $\textbf{V}(\textbf{k})$ are of the order of magnitude of 1 or lower for any $\textbf{k}$ and that $\lambda \ll 1$ under a typical parameter set, we take the unperturbed Hamiltonian to be
 
 ```math
 \begin{bmatrix}
@@ -161,7 +161,7 @@ The two high-energy eigenstates $\ket{n_ \uparrow (\textbf{k})}$ and $\ket{n_ \d
 
 with $\boldsymbol{\sigma}_ i$ the Pauli matrices and where $\bar{E}(\textbf{k}) \equiv \tfrac{1}{2} \[ \textbf{E}_ {+}(\textbf{k}) + \textbf{E}_ {+}(\textbf{k}+\textbf{Q}) \]$, $\Delta(\textbf{k}) \equiv \bra{+(\textbf{k})} \textbf{V}(\textbf{k}) \ket{+(\textbf{k}+\textbf{Q})}$, and $\varepsilon(\textbf{k}) \equiv \tfrac{1}{2} \[ \textbf{E}_ {+}(\textbf{k}) - \textbf{E}_ {+}(\textbf{k}+\textbf{Q}) \]$. The high-energy subspace of the mean-field Hamiltonian and of the projected Hamiltonian share the exact same degeneracy points from the set $D$.
 
-We introduce the mass term $\xi > 0$ by taking $\textbf{H}_ {U}(\textbf{k}) \rightarrow \textbf{H}_ {U}(\textbf{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, it translates to
+We introduce the mass term $\xi > 0$ to first order in perturbation theory by taking $\textbf{H}_ {U}(\textbf{k}) \rightarrow \textbf{H}_ {U}(\textbf{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, it translates to
 
 ```math
 \textbf{H}_{MF}(\textbf{k}) \rightarrow
@@ -174,9 +174,9 @@ We introduce the mass term $\xi > 0$ by taking $\textbf{H}_ {U}(\textbf{k}) \rig
 
 for $\textbf{M}(\textbf{k}) \equiv \ket{+(\textbf{k})} \bra{+(\textbf{k}+\textbf{Q})}$.
 
-##### 1.2.2　Berry Curvature
+##### 1.2.2　Numerical Evaluation
 
-Given a Hamiltonian $H(\textbf{k})$, the Berry curvature $\textbf{B}_ {n}(\textbf{k})$ can be calculated at any point $\textbf{k}$ using
+Given a Hamiltonian $H(\textbf{k})$, the Berry curvature $\textbf{B}_ {n}(\textbf{k})$ can be calculated at any point $\textbf{k}$ as
 
 ```math
 \textbf{B}_{n}(\textbf{k}) =
@@ -185,9 +185,5 @@ i \sum_{m \neq n} \frac{ \langle \nabla H (\textbf{k}) \rangle_{nm} \times \lang
 ```
 
 where $\langle \nabla H (\textbf{k})\rangle_ {mn} = \bra{m(\textbf{k})} \nabla H (\textbf{k}) \ket{n(\textbf{k})}$ for $\\{ \ket{n (\textbf{k})} \\}$ the (orthonormal) set of energy eigenstates of $H(\textbf{k})$.
-
-##### 1.2.3　Berry Phase
-
-Bla
 
 ### 2　Peierls Substitution
