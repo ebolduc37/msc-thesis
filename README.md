@@ -51,7 +51,7 @@ where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consistin
 \end{align}
 ```
 
-Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$. The energy gap between the highest energy band of $\textbf{H}_{0}(\textbf{k})$ and the two other bands can be observed from Figure ??. Additionally, the property that $E_n (\textbf{k} + \textbf{Q}) = E_n (\textbf{k})$ if and only if $\textbf{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\textbf{k}) - E_n (\textbf{k} + \textbf{Q}) | < 0.01$ as seen in Figure ??.
+Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data [7, 19]. The energy gap between the highest energy band of $\textbf{H}_{0}(\textbf{k})$ and the two other bands can be observed from Figure ??. Additionally, the property that $E_n (\textbf{k} + \textbf{Q}) = E_n (\textbf{k})$ if and only if $\textbf{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\textbf{k}) - E_n (\textbf{k} + \textbf{Q}) | < 0.01$ as seen in Figure ??.
 
 ![H_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/117cb73c-5d12-43aa-ae1d-01d2ab6c5566)
 ![diff_E_n](https://github.com/ebolduc37/msc-thesis/assets/44382376/805d5a02-5b1e-4fc0-a4bc-66390c9cbbb5)
@@ -84,7 +84,9 @@ The focus is made on _physical_ current patterns—meaning that the current is c
 \end{align}
 ```
 
-##### 1.1.3　Full Mean-Field Hamiltonian Expression
+Under a typical parameter set, $V_ {pd} = 2.2$, $V_ {pp} = 1$, $z_ {pd} = 0.04$, and $z_ {pp} = z_ {pd} / 3$, in accordance with experimental data [7, 19].
+
+##### 1.1.3　Full Mean-Field Hamiltonian
 
 Combining both (4.7) and (4.11) yields the effective mean-field $\pi\textrm{LC}$ Hamiltonian
 
@@ -106,7 +108,7 @@ Four points are of particular interest here: the points $\textbf{k}^ *$ such tha
 ![H_MF_bands_all](https://github.com/ebolduc37/msc-thesis/assets/44382376/6a7fc6f8-8d2e-4199-a2bf-50c97aa9d7f4)
 ![H_MF_bands_high](https://github.com/ebolduc37/msc-thesis/assets/44382376/57951b05-93c6-4da7-a747-0a3bf1bea5cd)
 
-#### 1.1.4　Fermi Surface
+##### 1.1.4　Fermi Surface
 
 We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$ [49]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\textbf{H}_{MF}(\textbf{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the $N^2$ item. The resulting Fermi surface is shown in Figure ?? with hole and electron pockets in orange and blue respectively.
 
@@ -115,15 +117,25 @@ We put our focus on the two highest energy bands which are half-filled and relat
 
 #### 1.2　Berry Phase
 
-Bla
+It is possible to evaluate numerically the Berry phase accumulated by an electron orbiting a hole pocket. The method is straightforward: first, the Hamiltonian in momentum space in its matrix form is diagonalized numerically on a discrete grid of points; then, the Berry curvature is calculated at all points; finally, the Berry phase is evaluated by integrating over the area of the hole pocket which is enclosed by the electron's orbit.
 
 ##### 1.2.1　Mass Term
 
-Bla
+Special considerations must be taken in the presence of a Dirac point because numerical methods do not adequately work at discontinuous points. In the case of a two-level system in 2D, a mass term must be added to the Hamiltonian in order to evaluate the Berry phase. Given a small, finite value, the mass term provides a way to approximate the Dirac delta function located at the Dirac points in the Berry curvature. In such a way, numerical methods can approximate the Berry phase without any problem. In order to make this precise, the mass term should be small enough to make the delta function's weight negligible outside the area of integration whereas the grid resolution must be taken high enough to approximate around the peak accurately.
+
+
 
 ##### 1.2.2　Berry Curvature
 
-Bla
+Given a Hamiltonian $H$, the Berry curvature can be calculated at all points using
+
+```math
+\textbf{B}_{n}(\textbf{k}) =
+i \sum_{m \neq n} \frac{ \langle \nabla H (\textbf{k}) \rangle_{nm} \times \langle \nabla H (\textbf{k})\rangle_{mn}}
+{[ E_n(\textbf{k}) - E_m(\textbf{k}) ]^2}
+```
+
+where $\langle \nabla H (\textbf{k})\rangle_ {mn} = \langle m (\textbf{k}) | \nabla H (\textbf{k})| n (\textbf{k}) \rangle$
 
 ##### 1.2.3　Berry Phase
 
