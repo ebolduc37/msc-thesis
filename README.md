@@ -123,11 +123,58 @@ It is possible to evaluate numerically the Berry phase accumulated by an electro
 
 Special considerations must be taken in the presence of a Dirac point because numerical methods do not adequately work at discontinuous points. In the case of a two-level system in 2D, a mass term must be added to the Hamiltonian in order to evaluate the Berry phase. Given a small, finite value, the mass term provides a way to approximate the Dirac delta function located at the Dirac points in the Berry curvature. In such a way, numerical methods can approximate the Berry phase without any problem. In order to make this precise, the mass term should be small enough to make the delta function's weight negligible outside the area of integration whereas the grid resolution must be taken high enough to approximate around the peak accurately.
 
+To approach this problem, we must first rely on perturbation theory using the high-energy subspace. Considering that the matrix elements of $\textbf{V}(\textbf{k})$ are of the order of magnitude of 1 or lower for any $\textbf{k}$ and that $\lambda \ll 1$ under a typical parameter set, we take the unperturbed Hamiltonian to be
 
+```math
+\begin{bmatrix}
+\textbf{H}_{0}(\textbf{k}) & \textbf{0} \\
+\textbf{0} & \textbf{H}_{0}(\textbf{k} + \textbf{Q})
+\end{bmatrix}.
+```
+
+Let the energy eigenvalues and corresponding eigenstates off $\textbf{H}_ {0}(\textbf{k})$ be denoted by $\textbf{E}_ {n}(\textbf{k})$ and $\ket{n(\textbf{k})}$ for $n \in \\{ \pm, 0 \\}$ such that $E_+(\textbf{k}) \geq E_ {0, -}(\textbf{k})$. Hence, the unperturbed energy eigenvalues are $\textbf{E}_ {n}(\textbf{k})$ and $\textbf{E}_ {n}(\textbf{k}+\textbf{Q})$ with respective corresponding eigenstates
+
+```math
+\ket{n_\uparrow (\textbf{k})} =
+\begin{bmatrix}
+\ket{n(\textbf{k})} \\
+\textbf{0}
+\end{bmatrix}
+\qquad
+\ket{n_\downarrow (\textbf{k})} =
+\begin{bmatrix}
+\textbf{0} \\
+\ket{n(\textbf{k}+\textbf{Q})}
+\end{bmatrix}.
+```
+
+The two high-energy eigenstates $\ket{n_ \uparrow (\textbf{k})}$ and $\ket{n_ \downarrow (\textbf{k})}$ form a subspace that is separated enough energetically from the rest of the Hilbert space to apply perturbation theory and effectively project the mean-field Hamiltonian onto this subspace. Thus, the projected Hamiltonian at any point $\textbf{k}$ can be expressed as
+
+```math
+\textbf{H}_{U}(\textbf{k}) =
+\bar{E}(\textbf{k})\textbf{I}
++ \lambda \Delta(\textbf{k}) \boldsymbol{\sigma}_2
++ \varepsilon(\textbf{k}) \boldsymbol{\sigma}_3
+```
+
+with $\boldsymbol{\sigma}_ i$ the Pauli matrices and where $\bar{E}(\textbf{k}) \equiv \tfrac{1}{2} \[ \textbf{E}_ {+}(\textbf{k}) + \textbf{E}_ {+}(\textbf{k}+\textbf{Q}) \]$, $\Delta(\textbf{k}) \equiv \bra{+(\textbf{k})} \textbf{V}(\textbf{k}) \ket{+(\textbf{k}+\textbf{Q})}$, and $\varepsilon(\textbf{k}) \equiv \tfrac{1}{2} \[ \textbf{E}_ {+}(\textbf{k}) - \textbf{E}_ {+}(\textbf{k}+\textbf{Q}) \]$. The high-energy subspace of the mean-field Hamiltonian and of the projected Hamiltonian share the exact same degeneracy points from the set $D$.
+
+We introduce the mass term $\xi > 0$ by taking $\textbf{H}_ {U}(\textbf{k}) \rightarrow \textbf{H}_ {U}(\textbf{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, it translates to
+
+```math
+\textbf{H}_{MF}(\textbf{k}) \rightarrow
+\textbf{H}_{MF}(\textbf{k})
++ \begin{bmatrix}
+\textbf{0} & \alpha \xi \textbf{M}(\textbf{k}) \\
+\alpha \xi \textbf{M}^\dagger (\textbf{k}) & \textbf{0}
+\end{bmatrix}
+```
+
+for $\textbf{M}(\textbf{k}) \equiv \ket{+(\textbf{k})} \bra{+(\textbf{k}+\textbf{Q})}$.
 
 ##### 1.2.2　Berry Curvature
 
-Given a Hamiltonian $H$, the Berry curvature can be calculated at all points using
+Given a Hamiltonian $H(\textbf{k})$, the Berry curvature $\textbf{B}_ {n}(\textbf{k})$ can be calculated at any point $\textbf{k}$ using
 
 ```math
 \textbf{B}_{n}(\textbf{k}) =
@@ -135,7 +182,7 @@ i \sum_{m \neq n} \frac{ \langle \nabla H (\textbf{k}) \rangle_{nm} \times \lang
 {[ E_n(\textbf{k}) - E_m(\textbf{k}) ]^2}
 ```
 
-where $\langle \nabla H (\textbf{k})\rangle_ {mn} = \langle m (\textbf{k}) | \nabla H (\textbf{k})| n (\textbf{k}) \rangle$
+where $\langle \nabla H (\textbf{k})\rangle_ {mn} = \bra{m(\textbf{k})} \nabla H (\textbf{k}) \ket{n(\textbf{k})}$ for $\\{ \ket{n (\textbf{k})} \\}$ the (orthonormal) set of energy eigenstates of $H(\textbf{k})$.
 
 ##### 1.2.3　Berry Phase
 
