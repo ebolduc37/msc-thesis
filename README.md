@@ -27,7 +27,7 @@ The choice of the unit cell for a single $\textrm{CuO}_ 2$ plane and of orbital 
 
 ##### 1.1.1　Kinetic Energy
 
-The kinetic energy in momentum space can be obtained from its position-space expression through a Fourier transformation. Let $\hat{c}_ {\textbf{k}\alpha}$ / $\hat{c}_ {\textbf{k}\alpha}^\dagger$ / $\hat{n}_ {\textbf{k}\alpha}$ be the annihilation/creation/number operator for an electron in orbital $\alpha$ with crystal momentum $\hbar \textbf{k}$ with $\textbf{k} = ( k^x, k^y ) \in \tfrac{2\pi}{aN} \mathbb{Z}_ N^2$. Introducing the ordering wave vector $\textbf{Q} = \tfrac{1}{a} (\pi,\pi)$ for the Fermi surface reconstruction, we obtain after some calculations that
+The kinetic energy in momentum space can be obtained from its position-space expression through a Fourier transformation. Let $\hat{c}_ {\textbf{k}\alpha}$ / $\hat{c}_ {\textbf{k}\alpha}^\dagger$ / $\hat{n}_ {\textbf{k}\alpha}$ be the annihilation/creation/number operator for an electron in orbital $\alpha$ with crystal momentum $\hbar \textbf{k}$ with $\textbf{k} = ( k_x, k_y ) \in \tfrac{2\pi}{aN} \mathbb{Z}_ N^2$. By periodicity, the Brillouin zone $BZ$ is the set $\tfrac{1}{a} \[−\pi, \pi\] \times \tfrac{1}{a} \[−\pi, \pi\]$. Introducing the ordering wave vector $\textbf{Q} = \tfrac{1}{a} (\pi,\pi)$ for the Fermi surface reconstruction, we obtain after some calculations that
 
 ```math
 \hat{H}_{0} = \sum_{\textbf{k} \in BZ'} \overline{\Psi}_\textbf{k}^\dagger
@@ -38,7 +38,7 @@ The kinetic energy in momentum space can be obtained from its position-space exp
 \overline{\Psi}_\textbf{k}
 ```
 
-where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consisting of the closed ball of radius $\tfrac{1}{a} \pi$ with p-norm $L_1$ centered at the origin. We defined $\overline{\Psi}_ \textbf{k}^\dagger \equiv \[ \Psi_ \textbf{k}^\dagger \Psi_{\textbf{k} + \textbf{Q}}^\dagger \]$ with $\Psi_\textbf{k}^\dagger \equiv \[ \hat{c}_ {\textbf{k}\alpha\sigma}^\dagger \hat{c}_ {\textbf{k}\alpha\sigma}^\dagger \hat{c}_ {\textbf{k}\alpha\sigma}^\dagger \]$ and applied a gauge transformation such that $\hat{c}_ {\textbf{k} x} \rightarrow i\hat{c}_ {\textbf{k} x}$ and $\hat{c}_ {\textbf{k} y} \rightarrow i\hat{c}_ {\textbf{k} y}$. By letting $s_x \equiv \sin{(\tfrac{a}{2} k^x)}$ and $s_y \equiv \sin{(\tfrac{a}{2} k^y)}$, we have that
+where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consisting of the closed ball of radius $\tfrac{1}{a} \pi$ with p-norm $L_1$ centered at the origin. We defined $\overline{\Psi}_ \textbf{k}^\dagger \equiv \[ \Psi_ \textbf{k}^\dagger \Psi_{\textbf{k} + \textbf{Q}}^\dagger \]$ with $\Psi_\textbf{k}^\dagger \equiv \[ \hat{c}_ {\textbf{k}\alpha\sigma}^\dagger \hat{c}_ {\textbf{k}\alpha\sigma}^\dagger \hat{c}_ {\textbf{k}\alpha\sigma}^\dagger \]$ and applied a gauge transformation such that $\hat{c}_ {\textbf{k} x} \rightarrow i\hat{c}_ {\textbf{k} x}$ and $\hat{c}_ {\textbf{k} y} \rightarrow i\hat{c}_ {\textbf{k} y}$. By letting $s_x \equiv \sin{(\tfrac{a}{2} k_x)}$ and $s_y \equiv \sin{(\tfrac{a}{2} k_y)}$, we have that
 
 ```math
 \begin{align}
@@ -51,9 +51,7 @@ where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consistin
 \end{align}
 ```
 
-Take note that $\textbf{H}_{0}(\textbf{k})$ is periodic with period $2\pi a$ in the $k^x$ and in the $k^y$ directions.
-
-Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$. The energy gap between the highest energy band of $\textbf{H}_{0}(\textbf{k})$ and the two other bands can be observed from the plot. Additionally, the property that $E_n (\textbf{k} + \textbf{Q}) = E_n (\textbf{k})$ if and only if $\textbf{k} \in \partial BZ^\prime$ can be observed numerically by inspecting the points where $| E_n (\textbf{k}) - E_n (\textbf{k} + \textbf{Q}) | < 0.01$.
+Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$. The energy gap between the highest energy band of $\textbf{H}_{0}(\textbf{k})$ and the two other bands can be observed from Figure ??. Additionally, the property that $E_n (\textbf{k} + \textbf{Q}) = E_n (\textbf{k})$ if and only if $\textbf{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\textbf{k}) - E_n (\textbf{k} + \textbf{Q}) | < 0.01$ as seen in Figure ??.
 
 ![H_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/117cb73c-5d12-43aa-ae1d-01d2ab6c5566)
 ![diff_E_n](https://github.com/ebolduc37/msc-thesis/assets/44382376/805d5a02-5b1e-4fc0-a4bc-66390c9cbbb5)
@@ -73,7 +71,7 @@ From the charge order $\hat{H}^\prime$ taking into consideration the intraorbita
 
 where an explicit expression for $\textbf{H}_ {1}(\textbf{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $V_ {pd} + 2V_ {pp} \equiv \widetilde{\epsilon}_ d$ in $\textrm{Cu}d_{x^2-y^2}$ and $2V_{pd} \equiv \widetilde{\epsilon}_ p$ in $\textrm{O}p_x$ and $\textrm{O}p_y$, where $V_{\beta \alpha}$ is the interorbital Coulomb interaction energy.
 
-The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._ [7] is shown in Figure 4.2. The second current pattern can be obtained from the one in Figure 4.2 by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be distinguished by $\phi \in \\{ \pm 1 \\}$ with the current pattern investigated by Bulut _et al._ [7] corresponding to $\phi = 1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv \tfrac{V_{pd} z_{pd}}{t_{pd}}$, $R_{pp} \equiv \tfrac{V_{pp} z_{pp}}{t_{pp}}$, $c_x \equiv \cos{(\tfrac{a}{2} k^x)}$, and $c_x \equiv \cos{(\tfrac{a}{2} k^x)}$,
+The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._ [7] is shown in Figure 4.2. The second current pattern can be obtained from the one in Figure 4.2 by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be distinguished by $\phi \in \\{ \pm 1 \\}$ with the current pattern investigated by Bulut _et al._ [7] corresponding to $\phi = 1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
 
 ```math
 \begin{align}
@@ -86,39 +84,48 @@ The focus is made on _physical_ current patterns—meaning that the current is c
 \end{align}
 ```
 
-##### 1.1.3　Full Mean-Field Hamiltonian
+##### 1.1.3　Full Mean-Field Hamiltonian Expression
 
 Combining both (4.7) and (4.11) yields the effective mean-field $\pi\textrm{LC}$ Hamiltonian
 
 ```math
 \hat{H}_{MF} = \sum_{\textbf{k} \in BZ'} \overline{\Psi}_\textbf{k}^\dagger \textbf{H}_{MF}(\textbf{k}) \overline{\Psi}_\textbf{k}
 ```
-where letting $\epsilon_ d \rightarrow \epsilon_ \alpha + \widetilde{\epsilon}_ \alpha \equiv \varepsilon_ \alpha$ in $\textbf{H}_{0}(\textbf{k})$ results in
+where letting $\epsilon_ d \rightarrow \epsilon_ \alpha + \widetilde{\epsilon}_ \alpha \equiv \varepsilon_ \alpha$ in $\textbf{H}_ {0}(\textbf{k})$ and real matrix $\textbf{V}(\textbf{k}) \equiv i \lambda^{-1} \textbf{H}_ {1}(\textbf{k})$ for unitless parameter $\lambda = z_ {pd}/t_ {pd}$ results in
 
 ```math
 \textbf{H}_{MF}(\textbf{k}) =
 \begin{bmatrix}
-\textbf{H}_{0}(\textbf{k}) & \textbf{H}_{1}(\textbf{k}) \\
-\textbf{H}_{1}^\dagger(\textbf{k}) & \textbf{H}_{0}(\textbf{k} + \textbf{Q})
+\textbf{H}_{0}(\textbf{k}) & - i \lambda \textbf{V}(\textbf{k}) \\
+i \lambda \textbf{V}^T (\textbf{k}) & \textbf{H}_{0}(\textbf{k} + \textbf{Q})
 \end{bmatrix}.
 ```
+
+Four points are of particular interest here: the points $k^ *$ such that $|k^ *_ x| = |k^ *_ y| = \tfrac{\pi}{2a}$, a set that we denote by $D$. These momenta correspond to the 2-fold degeneracy points of the high-energy subspace of $\textbf{H}_{MF}(\textbf{k})$ as seen in Figure ??.
 
 ![H_MF_bands_all](https://github.com/ebolduc37/msc-thesis/assets/44382376/6a7fc6f8-8d2e-4199-a2bf-50c97aa9d7f4)
 ![H_MF_bands_high](https://github.com/ebolduc37/msc-thesis/assets/44382376/57951b05-93c6-4da7-a747-0a3bf1bea5cd)
 
-#### 1.2　Fermi Surface
+#### 1.1.4　Fermi Surface
+
+We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$ [49]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\textbf{H}_{MF}(\textbf{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the $N^2$ item. The resulting Fermi surface is shown in Figure ?? with hole and electron pockets in orange and blue respectively.
+
+![H_MF_bands_high_F](https://github.com/ebolduc37/msc-thesis/assets/44382376/d29dbfce-ed17-4bcc-9974-a275da116828)
+![Fermi_pockets](https://github.com/ebolduc37/msc-thesis/assets/44382376/3497f477-5264-4094-bae2-5e944335f97f)
+
+#### 1.2　Berry Phase
 
 Bla
 
-#### 1.3　Mean-Field Hamiltonian with Mass Term
+##### 1.2.1　Mass Term
 
 Bla
 
-#### 1.4　Berry Curvature
+##### 1.2.2　Berry Curvature
 
 Bla
 
-#### 1.5　Berry Phase
+##### 1.2.3　Berry Phase
 
 Bla
 
