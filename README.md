@@ -135,17 +135,19 @@ To approach this problem, we must first rely on perturbation theory using the hi
 Let the energy eigenvalues and corresponding eigenstates off $\textbf{H}_ {0}(\textbf{k})$ be denoted by $\textbf{E}_ {n}(\textbf{k})$ and $\ket{n(\textbf{k})}$ for $n \in \\{ \pm, 0 \\}$ such that $E_+(\textbf{k}) \geq E_ {0, -}(\textbf{k})$. Hence, the unperturbed energy eigenvalues are $\textbf{E}_ {n}(\textbf{k})$ and $\textbf{E}_ {n}(\textbf{k}+\textbf{Q})$ with respective corresponding eigenstates
 
 ```math
+\begin{gather}
 \ket{n_\uparrow (\textbf{k})} =
 \begin{bmatrix}
 \ket{n(\textbf{k})} \\
 \textbf{0}
-\end{bmatrix}
-\qquad
+\end{bmatrix},
+\\
 \ket{n_\downarrow (\textbf{k})} =
 \begin{bmatrix}
 \textbf{0} \\
 \ket{n(\textbf{k}+\textbf{Q})}
 \end{bmatrix}.
+\end{gather}
 ```
 
 The two high-energy eigenstates $\ket{n_ \uparrow (\textbf{k})}$ and $\ket{n_ \downarrow (\textbf{k})}$ form a subspace that is separated enough energetically from the rest of the Hilbert space to apply perturbation theory and effectively project the mean-field Hamiltonian onto this subspace. Thus, the projected Hamiltonian at any point $\textbf{k}$ can be expressed as
@@ -164,9 +166,9 @@ We introduce the mass term $\xi > 0$ by taking $\textbf{H}_ {U}(\textbf{k}) \rig
 ```math
 \textbf{H}_{MF}(\textbf{k}) \rightarrow
 \textbf{H}_{MF}(\textbf{k})
-+ \begin{bmatrix}
-\textbf{0} & \alpha \xi \textbf{M}(\textbf{k}) \\
-\alpha \xi \textbf{M}^\dagger (\textbf{k}) & \textbf{0}
++ \alpha \xi \begin{bmatrix}
+\textbf{0} & \textbf{M}(\textbf{k}) \\
+\textbf{M}^\dagger (\textbf{k}) & \textbf{0}
 \end{bmatrix}
 ```
 
