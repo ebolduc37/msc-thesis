@@ -1,6 +1,6 @@
 # Determination of the Berry Phase in the Staggered Loop Current Model of the Pseudogap in the Cuprates.
 
-By Etienne Bolduc, Department of Physics, McGill University, Montreal, Canada. (August 2019)  
+By Etienne Bolduc, Department of Physics, McGill University, Montreal, Canada (August 2019).  
 A thesis submitted to McGill University in partial fulfillment of the requirements of the degree of Master of Science.
 
 ## Abstract
@@ -13,11 +13,13 @@ The present section is a short summary of the numerical analysis behind this the
 
 ### 1　Semiclassical approach
 
-In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in Figure 4.2, leading to this phase being referred to as the circulating current phase [50]. It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase [51].
+In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in the figure below, leading to this phase being referred to as the circulating current phase [50]. It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase [51].
 
-More recently, Bulut _et al._ have investigated a phase with a staggered pattern of intra-unit cell loop currents (LCs) called $\pi\textrm{LC}$ phase [7]. It features the ordering wave vector $\boldsymbol{Q} = \tfrac{1}{a} (\pi,\pi)$ where $a$ is the lattice spacing, one that is relevant to cuprates [29]. As demonstrated in Figure 4.1, it plays an essential role in the Fermi surface reconstruction suggested to be behind the small Fermi surface of the pseudogap phase and the hole and electron pockets observed in experiments [8]. This section shows that a d-wave-symmetric gap will be maintained in the energy spectrum of the $\pi\textrm{LC}$ state, in agreement with the pseudogap phase [29]. Additionally, the $\pi\textrm{LC}$ state breaks time-reversal symmetry and could explain the Kerr effect observed in the pseudogap phase through experiments [7].
+![Color-online-Staggered-pattern-of-spontaneous-loop-currents-Open-circle-x-and-y](https://github.com/ebolduc37/msc-thesis/assets/44382376/5d20d3f6-394a-4f8d-bcdd-83936f4a8cea)
 
-The $\pi\textrm{LC}$ Hamiltonian is written on a square lattice and each site corresponds to a unit cell, i.e., a $\textrm{CuO}_ 2$ plane containing a copper $d_{x^2-y^2}$ orbital and oxygen $p_x$ and $p_y$ orbitals, denoted by $\textrm{Cu}d_{x^2-y^2}$, $\textrm{O}p_x$, and $\textrm{O}p_y$. The relevant bonds are the nearest neighbor $p–d$ and $p–p$ bonds. As discussed before, these bonds exhibit intra-unit cell loop currents, equivalent to directional hopping. Additionally, the current must switch direction between unit cells like in Figure 4.2 to obtain the Fermi surface reconstruction found in Figure 4.1. Any state under such considerations breaks both time-reversal and lattice-translation symmetries. The specific staggered pattern of intertwined LCs studied by Bulut _et al._ [7] is shown in Figure 4.2. Note that this state has 4-fold rotational symmetry and conserves current. The $\pi\textrm{LC}$ model analyzed below is the same as the one explored by Bulut _et al._ [7], but an alternate current pattern is also investigated—ultimately leading to the same Berry phase.
+More recently, Bulut _et al._ have investigated a phase with a staggered pattern of intra-unit cell loop currents (LCs) called $\pi\textrm{LC}$ phase [7]. It features the ordering wave vector $\boldsymbol{Q} = \tfrac{1}{a} (\pi,\pi)$ where $a$ is the lattice spacing, one that is relevant to cuprates [29], which plays an essential role in the Fermi surface reconstruction suggested to be behind the small Fermi surface of the pseudogap phase and the hole and electron pockets observed in experiments [8].
+
+The $\pi\textrm{LC}$ Hamiltonian is written on a square lattice and each site corresponds to a unit cell, i.e., a $\textrm{CuO}_ 2$ plane containing a copper $d_{x^2-y^2}$ orbital and oxygen $p_x$ and $p_y$ orbitals, denoted by $\textrm{Cu}d_{x^2-y^2}$, $\textrm{O}p_x$, and $\textrm{O}p_y$. The relevant bonds are the nearest neighbor $p–d$ and $p–p$ bonds. As discussed above, these bonds exhibit intra-unit cell loop currents, equivalent to directional hopping. Additionally, the direction of the current must be inverted between unit cells to obtain the right Fermi surface reconstruction. Any state under such considerations breaks both time-reversal and lattice-translation symmetries. The specific staggered pattern of intertwined LCs studied by Bulut _et al._ [7] is shown in the figure above. Note that this state has 4-fold rotational symmetry and conserves current. The $\pi\textrm{LC}$ model analyzed thereafter is the same as the one explored by Bulut _et al._ [7], but an alternate current pattern is also investigated—ultimately leading to the same Berry phase.
 
 The $\pi\textrm{LC}$ Hamiltonian denoted by $\hat{H}$ can be broken down into two parts: the kinetic energy $\hat{H}_0$ and the charge order $\hat{H}^\prime$. Each one can be solved separately. However, a mean-field approach is needed to solve the charge order, which will lead to the final diagonalized Hamiltonian being a mean-field approximation. Since we are looking for solutions that do not break spin-rotational symmetries, the spin labels are omitted going forward.
 
@@ -27,7 +29,7 @@ The choice of the unit cell for a single $\textrm{CuO}_ 2$ plane and of orbital 
 
 ##### 1.1.1　Kinetic Energy
 
-The kinetic energy in momentum space can be obtained from its position-space expression through a Fourier transformation. Let $\hat{c}_ {\boldsymbol{k}\alpha}$ / $\hat{c}_ {\boldsymbol{k}\alpha}^\dagger$ / $\hat{n}_ {\boldsymbol{k}\alpha}$ be the annihilation/creation/number operator for an electron in orbital $\alpha$ with crystal momentum $\hbar \boldsymbol{k}$ with $\boldsymbol{k} = ( k_x, k_y ) \in \tfrac{2\pi}{aN} \mathbb{Z}_ N^2$. By periodicity, the Brillouin zone $BZ$ is the set $\tfrac{1}{a} \[−\pi, \pi\] \times \tfrac{1}{a} \[−\pi, \pi\]$. Introducing the ordering wave vector $\boldsymbol{Q} = \tfrac{1}{a} (\pi,\pi)$ for the Fermi surface reconstruction, we obtain after some calculations that
+The kinetic energy in momentum space can be obtained from its position-space expression through a Fourier transformation. Let $\hat{c}_ {\boldsymbol{k}\alpha}$ / $\hat{c}_ {\boldsymbol{k}\alpha}^\dagger$ be the annihilation/creation operator for an electron in orbital $\alpha$ with crystal momentum $\hbar \boldsymbol{k}$ with $\boldsymbol{k} = ( k_x, k_y ) \in \tfrac{2\pi}{aN} \mathbb{Z}_ N^2$. By periodicity, the Brillouin zone $BZ$ is the set $\tfrac{1}{a} \[−\pi, \pi\] \times \tfrac{1}{a} \[−\pi, \pi\]$. Introducing the ordering wave vector $\boldsymbol{Q} = \tfrac{1}{a} (\pi,\pi)$ for the Fermi surface reconstruction, we have that
 ```math
 \hat{H}_{0} = \sum_{\boldsymbol{k} \in BZ'} \overline{\Psi}_\boldsymbol{k}^\dagger
 \begin{bmatrix}
@@ -48,14 +50,14 @@ where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consistin
 \end{align}
 ```
 
-Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data [7, 19]. The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed from Figure ??. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in Figure ??.
+Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data [7, 19]. The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed in the first figure below. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in the second figure below.
 
 ![H_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/117cb73c-5d12-43aa-ae1d-01d2ab6c5566)
 ![diff_E_n](https://github.com/ebolduc37/msc-thesis/assets/44382376/805d5a02-5b1e-4fc0-a4bc-66390c9cbbb5)
 
 ##### 1.1.2　Mean-Field Decomposition of the Charge Order
 
-From the charge order $\hat{H}^\prime$ taking into consideration the intraorbital and interorbital interactions in position space, it is possible to obtain the mean-field version $\hat{H}^\prime_{MF}$ in terms of circulating currents in momentum-space. On the one hand, the intraorbital interactions lead to Hartree shifts to the orbital energies which merely renormalize in $\epsilon_d$ and $\epsilon_p$. On the other hand, the interorbital interactions can be decomposed in terms of the circulating currents where the sign depends on the direction of the current flow. After some calculations, the mean-field decomposition of the charge order can be expressed as
+From the charge order $\hat{H}^\prime$ taking into consideration the intraorbital and interorbital interactions in position space, it is possible to obtain the mean-field version $\hat{H}^\prime_{MF}$ in terms of circulating currents in momentum-space. On the one hand, the intraorbital interactions lead to Hartree shifts to the orbital energies which merely renormalize in $\epsilon_d$ and $\epsilon_p$. On the other hand, the interorbital interactions can be decomposed in terms of the circulating currents where the sign depends on the direction of the current flow. The mean-field decomposition of the charge order is expressed as
 ```math
 \hat{H}_{MF}^\prime = \sum_{\boldsymbol{k} \in BZ'} \overline{\Psi}_\boldsymbol{k}^\dagger
 \begin{bmatrix}
@@ -64,9 +66,9 @@ From the charge order $\hat{H}^\prime$ taking into consideration the intraorbita
 \end{bmatrix}
 \overline{\Psi}_\boldsymbol{k}
 ```
-where an explicit expression for $\boldsymbol{H}_ {1}(\boldsymbol{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $V_ {pd} + 2V_ {pp} \equiv \widetilde{\epsilon}_ d$ in $\textrm{Cu}d_{x^2-y^2}$ and $2V_{pd} \equiv \widetilde{\epsilon}_ p$ in $\textrm{O}p_x$ and $\textrm{O}p_y$, where $V_{\beta \alpha}$ is the interorbital Coulomb interaction energy.
+where an explicit expression for $\boldsymbol{H}_ {1}(\boldsymbol{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $\widetilde{\epsilon}_ d \equiv V_ {pd} + 2V_ {pp}$ in $\textrm{Cu}d_{x^2-y^2}$ and $\widetilde{\epsilon}_ p \equiv 2V_{pd}$ in $\textrm{O}p_x$ and $\textrm{O}p_y$, where $V_{\beta \alpha}$ is the interorbital Coulomb interaction energy.
 
-The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._ [7] is shown in Figure 4.2. The second current pattern can be obtained from the one in Figure 4.2 by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be distinguished by $\phi \in \\{ \pm 1 \\}$ with the current pattern investigated by Bulut _et al._ [7] corresponding to $\phi = 1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
+The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._ [7] is shown at the beginning. The second current pattern can be obtained from the former by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be denoted by $\phi \in \\{ \pm 1 \\}$, where the current pattern investigated by Bulut _et al._ [7] corresponds to $\phi = 1$ and the other to $\phi = -1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
 ```math
 \begin{align}
 & \boldsymbol{H}_{1}(\boldsymbol{k}) = \\
@@ -82,7 +84,7 @@ Under a typical parameter set, $V_ {pd} = 2.2$, $V_ {pp} = 1$, $z_ {pd} = 0.04$,
 
 ##### 1.1.3　Full Mean-Field Hamiltonian
 
-Combining both (4.7) and (4.11) yields the effective mean-field $\pi\textrm{LC}$ Hamiltonian
+Combining both parts yields the effective mean-field $\pi\textrm{LC}$ Hamiltonian
 ```math
 \hat{H}_{MF} = \sum_{\boldsymbol{k} \in BZ'} \overline{\Psi}_\boldsymbol{k}^\dagger \boldsymbol{H}_{MF}(\boldsymbol{k}) \overline{\Psi}_\boldsymbol{k}
 ```
@@ -95,14 +97,14 @@ i \lambda \boldsymbol{V}^T (\boldsymbol{k}) & \boldsymbol{H}_{0}(\boldsymbol{k} 
 \end{bmatrix}.
 ```
 
-Four points are of particular interest here: the points $\boldsymbol{k}^ *$ such that $|k^ *_ x| = |k^ *_ y| = \tfrac{\pi}{2a}$, a set that we denote by $D$. These momenta correspond to the 2-fold degeneracy points of the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ as seen in Figure ??.
+Four points are of particular interest here: the points $\boldsymbol{k}^ *$ such that $|k^ *_ x| = |k^ *_ y| = \tfrac{\pi}{2a}$, a set that we denote by $D$. These momenta correspond to the 2-fold degeneracy points of the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ as seen in the second figure below for $\phi = 1$. Identical results are obtained when $\phi = -1$.
 
 ![H_MF_bands_all](https://github.com/ebolduc37/msc-thesis/assets/44382376/6a7fc6f8-8d2e-4199-a2bf-50c97aa9d7f4)
 ![H_MF_bands_high](https://github.com/ebolduc37/msc-thesis/assets/44382376/57951b05-93c6-4da7-a747-0a3bf1bea5cd)
 
 ##### 1.1.4　Fermi Surface
 
-We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$ [49]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the $N^2$ item. The resulting Fermi surface is shown in Figure ?? with hole and electron pockets in orange and blue respectively.
+We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$ [49]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the average of the $(N^2)^{th}$ and $(N^2+1)^{th}$ item. The resulting Fermi surface is shown in the second figure below with hole and electron pockets in orange and blue respectively.
 
 ![H_MF_bands_high_F](https://github.com/ebolduc37/msc-thesis/assets/44382376/d29dbfce-ed17-4bcc-9974-a275da116828)
 ![Fermi_pockets](https://github.com/ebolduc37/msc-thesis/assets/44382376/3497f477-5264-4094-bae2-5e944335f97f)
@@ -147,7 +149,7 @@ The two high-energy eigenstates $\ket{n_ \uparrow (\boldsymbol{k})}$ and $\ket{n
 + \lambda \Delta(\boldsymbol{k}) \boldsymbol{\sigma}_2
 + \varepsilon(\boldsymbol{k}) \boldsymbol{\sigma}_3
 ```
-with $\boldsymbol{\sigma}_ i$ the Pauli matrices and where $\bar{E}(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) + \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$, $\Delta(\boldsymbol{k}) \equiv \bra{+(\boldsymbol{k})} \boldsymbol{V}(\boldsymbol{k}) \ket{+(\boldsymbol{k}+\boldsymbol{Q})}$, and $\varepsilon(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) - \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$. The high-energy subspace of the mean-field Hamiltonian and of the projected Hamiltonian share the exact same degeneracy points from the set $D$.
+with $\boldsymbol{\sigma}_ i$ the Pauli matrices and where $\bar{E}(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) + \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$, $\Delta(\boldsymbol{k}) \equiv \bra{+(\boldsymbol{k})} \boldsymbol{V}(\boldsymbol{k}) \ket{+(\boldsymbol{k}+\boldsymbol{Q})}$, and $\varepsilon(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) - \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$. The high-energy subspace of the mean-field Hamiltonian and of the projected Hamiltonian share the same degeneracy points from the set $D$.
 
 We introduce the mass term $\xi > 0$ to first order in perturbation theory by taking $\boldsymbol{H}_ {U}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {U}(\boldsymbol{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, if we let $\boldsymbol{M}(\boldsymbol{k}) \equiv \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$, this translates to
 ```math
