@@ -169,7 +169,7 @@ We introduce the mass term $\xi > 0$ to first order in perturbation theory by ta
 
 ##### 1.2.2　Numerical Evaluation
 
-The mass term needs to be chosen appropriately for the numerical evaluation of the Berry phase. For a simple linear dispersion, a fraction $\\{1 + \[\rho/\xi\]^2 \\}^{-\tfrac{1}{2}}$ of the delta function's weight is lost outside of a radius $\rho$ around the Dirac point. Hence, $\rho$ and $xi$ must be chosen for $\rho / \xi$ to be large enough. In particular, about $1%$ of the delta function's weight is lost when taking $\rho/\xi = 100$. Asymmetry in the growth rate of the gap needs to be considered when choosing the mass term and the grid. We can assume the loss from a more general dispersion to be negligible because the correction is of order $\lambda \ll 1$ under a typical parameter set.
+The mass term needs to be chosen appropriately for the numerical evaluation of the Berry phase. For a simple linear dispersion, a fraction $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ of the delta function's weight is lost outside of a radius $\rho$ around the Dirac point. Hence, $\rho$ and $xi$ must be chosen for $\rho / \xi$ to be large enough. In particular, about $1%$ of the delta function's weight is lost when taking $\rho/\xi = 100$. Asymmetry in the growth rate of the gap needs to be considered when choosing the mass term and the grid. We can assume the loss from a more general dispersion to be negligible because the correction is of order $\lambda \ll 1$ under a typical parameter set.
 
 It is enough to only compute the Berry phase of the hole pocket surrounding $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ for an electron in the lowest energy band of the high-energy subspace.
 
@@ -183,11 +183,11 @@ i \sum_{m \neq n} \frac{ \langle \nabla H (\boldsymbol{k}) \rangle_{nm} \times \
 ```
 where $\langle \nabla H (\boldsymbol{k})\rangle_ {mn} = \bra{m(\boldsymbol{k})} \nabla H (\boldsymbol{k}) \ket{n(\boldsymbol{k})}$ for $\\{ \ket{n (\boldsymbol{k})} \\}$ the (orthonormal) set of energy eigenstates of $H(\boldsymbol{k})$. Thus, we apply the above equation to $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$, the mean-field Hamiltonian with the mass term.
 
-At each point $\boldsymbol{k}$, we calculate numerically the eigenstates of $\boldsymbol{H}_ {0}(\boldsymbol{k})$ and $\boldsymbol{H}_ {0}(\boldsymbol{k}+\boldsymbol{Q})$ to derive $\boldsymbol{M}(\boldsymbol{k}) = \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$ to get $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$. Then, we calculate numerically the eigenvalues and eigenstates of $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$ to use in the equation of the Berry curvature above. Take note that we must take the gradient of $\boldsymbol{H}_ {MF}(\boldsymbol{k})$ as we do not have a closed-form expression of the mass term in terms of $\boldsymbol{k}$. Fortunately, this is not a problem because the contribution of the gradient of the mass term in the total is negligible.
+At each point $\boldsymbol{k}$, we calculate numerically the eigenstates of $\boldsymbol{H}_ {0}(\boldsymbol{k})$ and $\boldsymbol{H}_ {0}(\boldsymbol{k}+\boldsymbol{Q})$ to derive $\boldsymbol{M}(\boldsymbol{k}) = \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$ and obtain $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$. Then, we calculate numerically the eigenvalues and eigenstates of $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$ to use in the equation of the Berry curvature above. Take note that we must take the gradient of $\boldsymbol{H}_ {MF}(\boldsymbol{k})$ as we do not have a closed-form expression of the mass term in terms of $\boldsymbol{k}$. Fortunately, this is not a problem because the contribution of the gradient of the mass term in the total is negligible.
 
 Finally, we perform a numerical integration over the area of the hole pocket to obtain the Berry phase. The results are listed in the table below.
 
-| $\phi$ | $\gamma_-(C)/\pi$ | $\\{1 + \[\rho/\xi\]^2 \\}^{-\tfrac{1}{2}}$ |
+| $\phi$ | $\gamma_-(C)/\pi$ | $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ |
 | :----: | :---------------: | :--: |
 | $+1$   | 99.4%             | 0.6% |
 | $-1$   | 99.3%             | 0.6% |
