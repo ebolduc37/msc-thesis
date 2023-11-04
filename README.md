@@ -11,7 +11,7 @@ High-temperature superconductivity in the cuprates has been at the heart of many
 
 The present section is a short summary of the numerical analysis behind this thesis. While the numerical computing—including plotting and graphing—was performed in MATLAB initially, it was converted to Python for portability and shareability after the thesis was submitted. For the sake of consistency, the plots found below are generated in Python. For more information, consult the [full thesis](bolduc-2019-determination-of-the-berry-phase-in-the-staggered-loop-current-model-of-the-pseudogap-in-the-cuprates.pdf).
 
-### 1　Semiclassical approach
+### 1　Semiclassical Approach
 
 In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in the figure below, leading to this phase being referred to as the circulating current phase [50]. It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase [51].
 
