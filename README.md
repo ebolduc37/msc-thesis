@@ -152,7 +152,7 @@ The two high-energy eigenstates $\ket{n_ \uparrow (\boldsymbol{k})}$ and $\ket{n
 ```
 with $\boldsymbol{\sigma}_ i$ the Pauli matrices and where $\bar{E}(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) + \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$, $\Delta(\boldsymbol{k}) \equiv \bra{+(\boldsymbol{k})} \boldsymbol{V}(\boldsymbol{k}) \ket{+(\boldsymbol{k}+\boldsymbol{Q})}$, and $\varepsilon(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) - \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$. The high-energy subspace of the mean-field Hamiltonian and of the projected Hamiltonian share the same degeneracy points from the set $D$.
 
-We introduce the mass term $\xi > 0$ to first order in perturbation theory by taking $\boldsymbol{H}_ {U}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {U}(\boldsymbol{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, this translates to $\boldsymbol{H}_ {MF}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {MF}(\boldsymbol{k}) + \alpha \xi \boldsymbol{M}(\boldsymbol{k}) \equiv \boldsymbol{H}_{MF}^\xi(\boldsymbol{k})$ for
+We introduce the mass term $\xi > 0$ to first order in perturbation theory by taking $\boldsymbol{H}_ {U}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {U}(\boldsymbol{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, this translates to $\boldsymbol{H}_ {MF}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$ for $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k}) \equiv \boldsymbol{H}_ {MF}(\boldsymbol{k}) + \alpha \xi \boldsymbol{M}(\boldsymbol{k})$ where
 ```math
 \boldsymbol{M}(\boldsymbol{k})
 \equiv \begin{bmatrix}
@@ -161,7 +161,7 @@ We introduce the mass term $\xi > 0$ to first order in perturbation theory by ta
 \end{bmatrix}
 ,
 ```
-where $\boldsymbol{m}(\boldsymbol{k}) \equiv \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$.
+for $\boldsymbol{m}(\boldsymbol{k}) \equiv \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$.
 
 By introducing a mass term $\xi = 1 \cdot 10^{-5} \[a/\pi\]^{-1}$ as defined later on, the energy bands stay identical except near the degeneracy points where the degeneracy is lifted, as shown around the point $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ in the figure below.
 
