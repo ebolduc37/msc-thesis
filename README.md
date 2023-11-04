@@ -152,23 +152,18 @@ The two high-energy eigenstates $\ket{n_ \uparrow (\boldsymbol{k})}$ and $\ket{n
 ```
 with $\boldsymbol{\sigma}_ i$ the Pauli matrices and where $\bar{E}(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) + \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$, $\Delta(\boldsymbol{k}) \equiv \bra{+(\boldsymbol{k})} \boldsymbol{V}(\boldsymbol{k}) \ket{+(\boldsymbol{k}+\boldsymbol{Q})}$, and $\varepsilon(\boldsymbol{k}) \equiv \tfrac{1}{2} \[ \boldsymbol{E}_ {+}(\boldsymbol{k}) - \boldsymbol{E}_ {+}(\boldsymbol{k}+\boldsymbol{Q}) \]$. The high-energy subspace of the mean-field Hamiltonian and of the projected Hamiltonian share the same degeneracy points from the set $D$.
 
-We introduce the mass term $\xi > 0$ to first order in perturbation theory by taking $\boldsymbol{H}_ {U}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {U}(\boldsymbol{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, if we let $\boldsymbol{M}(\boldsymbol{k}) \equiv \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$, this translates to
+We introduce the mass term $\xi > 0$ to first order in perturbation theory by taking $\boldsymbol{H}_ {U}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {U}(\boldsymbol{k}) + \alpha \xi \boldsymbol{\sigma}_ 1$ for the unitary dimensionful constant $\alpha$ carrying units of energy times length. For the mean-field Hamiltonian, this translates to $\boldsymbol{H}_ {MF}(\boldsymbol{k}) \rightarrow \boldsymbol{H}_ {MF}(\boldsymbol{k}) + \alpha \xi \boldsymbol{M}(\boldsymbol{k}) \equiv \boldsymbol{H}_{MF}^\xi(\boldsymbol{k})$ for
 ```math
-\begin{align}
-\boldsymbol{H}_{MF}(\boldsymbol{k})
-& \rightarrow
-\boldsymbol{H}_{MF}(\boldsymbol{k})
-+ \alpha \xi \begin{bmatrix}
-\boldsymbol{0} & \boldsymbol{M}(\boldsymbol{k}) \\
-\boldsymbol{M}^\dagger (\boldsymbol{k}) & \boldsymbol{0}
+\boldsymbol{M}(\boldsymbol{k})
+\equiv \begin{bmatrix}
+\boldsymbol{0} & \boldsymbol{m}(\boldsymbol{k}) \\
+\boldsymbol{m}^\dagger (\boldsymbol{k}) & \boldsymbol{0}
 \end{bmatrix}
-\\
-& \equiv \boldsymbol{H}_{MF}^\xi(\boldsymbol{k})
-.
-\end{align}
+,
 ```
+where $\boldsymbol{m}(\boldsymbol{k}) \equiv \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$.
 
-By introducing a mass term $\xi = 1 \cdot 10^{-5} \[a/\pi\]^{-1}$ as defined later on, the energy bands stay identical except near the degeneracy points where the degeneracy is lifted, as shown below around the point $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$.
+By introducing a mass term $\xi = 1 \cdot 10^{-5} \[a/\pi\]^{-1}$ as defined later on, the energy bands stay identical except near the degeneracy points where the degeneracy is lifted, as shown around the point $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ in the figure below.
 
 ![08_degeneracy-with-mass](https://github.com/ebolduc37/msc-thesis/assets/44382376/552ad311-5c74-499f-9bb6-0eaae96f09d2)
 
