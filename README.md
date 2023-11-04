@@ -13,23 +13,32 @@ The present section is a short summary of the numerical analysis behind this the
 
 ### 1　Semiclassical Approach
 
-In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in the figure below, leading to this phase being referred to as the circulating current phase [50]. It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase [51].
+In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in the figure below, leading to this phase being referred to as the circulating current phase[^1]. It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase[^2].
+
+[^1]: C. M. Varma. Non-fermi-liquid states and pairing instability of a general model of copper oxide metals. _Phys. Rev. B_, 55:14554–14580, Jun 1997.
+[^2]: C. M. Varma. Pseudogap phase and the quantum-critical point in copper-oxide metals. _Phys. Rev. Lett._, 83:3538–3541, Oct 1999.
 
 ![Color-online-Staggered-pattern-of-spontaneous-loop-currents-Open-circle-x-and-y](https://github.com/ebolduc37/msc-thesis/assets/44382376/5d20d3f6-394a-4f8d-bcdd-83936f4a8cea)
 
-More recently, Bulut _et al._ have investigated a phase with a staggered pattern of intra-unit cell loop currents (LCs) called $\pi\textrm{LC}$ phase [7]. It features the ordering wave vector $\boldsymbol{Q} = \tfrac{1}{a} (\pi,\pi)$ where $a$ is the lattice spacing, one that is relevant to cuprates [29], which plays an essential role in the Fermi surface reconstruction suggested to be behind the small Fermi surface of the pseudogap phase and the hole and electron pockets observed in experiments [8].
+More recently, Bulut _et al._ have investigated a phase with a staggered pattern of intra-unit cell loop currents (LCs) called $\pi\textrm{LC}$ phase[^3]. It features the ordering wave vector $\boldsymbol{Q} = (\tfrac{\pi}{a}, \tfrac{\pi}{a})$ where $a$ is the lattice spacing, one that is relevant to cuprates[^4], which plays an essential role in the Fermi surface reconstruction suggested to be behind the small Fermi surface of the pseudogap phase and the hole and electron pockets observed in experiments[^5].
 
-The $\pi\textrm{LC}$ Hamiltonian is written on a square lattice and each site corresponds to a unit cell, i.e., a $\textrm{CuO}_ 2$ plane containing a copper $d_{x^2-y^2}$ orbital and oxygen $p_x$ and $p_y$ orbitals, denoted by $\textrm{Cu}d_{x^2-y^2}$, $\textrm{O}p_x$, and $\textrm{O}p_y$. The relevant bonds are the nearest neighbor $p–d$ and $p–p$ bonds. As discussed above, these bonds exhibit intra-unit cell loop currents, equivalent to directional hopping. Additionally, the direction of the current must be inverted between unit cells to obtain the right Fermi surface reconstruction. Any state under such considerations breaks both time-reversal and lattice-translation symmetries. The specific staggered pattern of intertwined LCs studied by Bulut _et al._ [7] is shown in the figure above. Note that this state has 4-fold rotational symmetry and conserves current. The $\pi\textrm{LC}$ model analyzed thereafter is the same as the one explored by Bulut _et al._ [7], but an alternate current pattern is also investigated—ultimately leading to the same Berry phase.
+[^3]: S. Bulut, A. P. Kampf, and W. A. Atkinson. Instability towards staggered loop currents in the three-orbital model for cuprate superconductors. _Phys. Rev. B_, 92:195140, Nov 2015.
+[^4]: G. Massarelli. Determination of berry’s phase in d-density-wave model of the pseudogap in the cuprates. Master’s thesis, McGill University, Montreal, 2016.
+[^5]: S. Chakravarty. Quantum oscillations and key theoretical issues in high temperature superconductors from the perspective of density waves. _Reports on Progress in Physics_, 74(2):022501, 2011.
+
+The $\pi\textrm{LC}$ Hamiltonian is written on a square lattice and each site corresponds to a unit cell, i.e., a CuO<sub>2</sub> plane containing a copper $d_{x^2-y^2}$ orbital and oxygen $p_x$ and $p_y$ orbitals, denoted by $\textrm{Cu}d_{x^2-y^2}$, $\textrm{O}p_x$, and $\textrm{O}p_y$. The relevant bonds are the nearest neighbor $p–d$ and $p–p$ bonds. As discussed above, these bonds exhibit intra-unit cell loop currents, equivalent to directional hopping. Additionally, the direction of the current must be inverted between unit cells to obtain the right Fermi surface reconstruction. Any state under such considerations breaks both time-reversal and lattice-translation symmetries. The specific staggered pattern of intertwined LCs studied by Bulut _et al._[^3] is shown in the figure above. Note that this state has 4-fold rotational symmetry and conserves current. The $\pi\textrm{LC}$ model analyzed thereafter is the same as the one explored by Bulut _et al._[^3], but an alternate current pattern is also investigated—ultimately leading to the same Berry phase.
 
 The $\pi\textrm{LC}$ Hamiltonian denoted by $\hat{H}$ can be broken down into two parts: the kinetic energy $\hat{H}_0$ and the charge order $\hat{H}^\prime$. Each one can be solved separately. However, a mean-field approach is needed to solve the charge order, which will lead to the final diagonalized Hamiltonian being a mean-field approximation. Since we are looking for solutions that do not break spin-rotational symmetries, the spin labels are omitted going forward.
 
 #### 1.1　Mean-Field Hamiltonian
 
-The choice of the unit cell for a single $\textrm{CuO}_ 2$ plane and of orbital phase convention can be found in Figure 4.3. The inequivalent bonds are numbered to distinguish them from one another. We assume a total of $N^2$ unit cells with periodic boundary conditions and label the orbitals as $d$ for $\textrm{Cu}d_{x^2-y^2}$, $x$ for $\textrm{O}p_x$, and $y$ for $\textrm{O}p_y$.
+The choice of the unit cell for a single CuO<sub>2</sub> plane and of orbital phase convention can be found in the figure below. The inequivalent bonds are numbered to distinguish them from one another. We assume a total of $N^2$ unit cells with periodic boundary conditions and label the orbitals as $d$ for $\textrm{Cu}d_{x^2-y^2}$, $x$ for $\textrm{O}p_x$, and $y$ for $\textrm{O}p_y$.
+
+![unit-cell](https://github.com/ebolduc37/msc-thesis/assets/44382376/1b22b1f2-4036-47e3-a0e8-4bd7ff49e05f)
 
 ##### 1.1.1　Kinetic Energy
 
-The kinetic energy in momentum space can be obtained from its position-space expression through a Fourier transformation. Let $\hat{c}_ {\boldsymbol{k}\alpha}$ / $\hat{c}_ {\boldsymbol{k}\alpha}^\dagger$ be the annihilation/creation operator for an electron in orbital $\alpha$ with crystal momentum $\hbar \boldsymbol{k}$ with $\boldsymbol{k} = ( k_x, k_y ) \in \tfrac{2\pi}{aN} \mathbb{Z}_ N^2$. By periodicity, the Brillouin zone $BZ$ is the set $\tfrac{1}{a} \[−\pi, \pi\] \times \tfrac{1}{a} \[−\pi, \pi\]$. Introducing the ordering wave vector $\boldsymbol{Q} = \tfrac{1}{a} (\pi,\pi)$ for the Fermi surface reconstruction, we have that
+The kinetic energy in momentum space can be obtained from its position-space expression through a Fourier transformation. Let $\hat{c}_ {\boldsymbol{k}\alpha}$ / $\hat{c}_ {\boldsymbol{k}\alpha}^\dagger$ be the annihilation/creation operator for an electron in orbital $\alpha$ with crystal momentum $\hbar \boldsymbol{k}$ with $\boldsymbol{k} = ( k_x, k_y ) \in \tfrac{2\pi}{aN} \mathbb{Z}_ N^2$. By periodicity, the Brillouin zone $BZ$ is the set $\[−\tfrac{\pi}{a}, \tfrac{\pi}{a}\] \times \[−\tfrac{\pi}{a}, \tfrac{\pi}{a}\]$. Introducing the ordering wave vector $\boldsymbol{Q} = (\tfrac{\pi}{a}, \tfrac{\pi}{a})$ for the Fermi surface reconstruction, we have that
 ```math
 \hat{H}_{0} = \sum_{\boldsymbol{k} \in BZ'} \overline{\Psi}_\boldsymbol{k}^\dagger
 \begin{bmatrix}
@@ -38,7 +47,7 @@ The kinetic energy in momentum space can be obtained from its position-space exp
 \end{bmatrix}
 \overline{\Psi}_\boldsymbol{k}
 ```
-where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consisting of the closed ball of radius $\tfrac{1}{a} \pi$ with p-norm $L_1$ centered at the origin. We defined $\overline{\Psi}_ \boldsymbol{k}^\dagger \equiv \[ \Psi_ \boldsymbol{k}^\dagger \Psi_{\boldsymbol{k} + \boldsymbol{Q}}^\dagger \]$ with $\Psi_\boldsymbol{k}^\dagger \equiv \[ \hat{c}_ {\boldsymbol{k}\alpha\sigma}^\dagger \hat{c}_ {\boldsymbol{k}\alpha\sigma}^\dagger \hat{c}_ {\boldsymbol{k}\alpha\sigma}^\dagger \]$ and applied a gauge transformation such that $\hat{c}_ {\boldsymbol{k} x} \rightarrow i\hat{c}_ {\boldsymbol{k} x}$ and $\hat{c}_ {\boldsymbol{k} y} \rightarrow i\hat{c}_ {\boldsymbol{k} y}$. By letting $s_x \equiv \sin{(\tfrac{a}{2} k_x)}$ and $s_y \equiv \sin{(\tfrac{a}{2} k_y)}$, we have that
+where $BZ^\prime$ is the reduced Brillouin zone consisting of the closed ball of radius $\tfrac{\pi}{a}$ with p-norm $L_1$ centered at the origin. We defined $\overline{\Psi}_ \boldsymbol{k}^\dagger \equiv \[ \Psi_ \boldsymbol{k}^\dagger \Psi_{\boldsymbol{k} + \boldsymbol{Q}}^\dagger \]$ with $\Psi_\boldsymbol{k}^\dagger \equiv \[ \hat{c}_ {\boldsymbol{k}\alpha\sigma}^\dagger \hat{c}_ {\boldsymbol{k}\alpha\sigma}^\dagger \hat{c}_ {\boldsymbol{k}\alpha\sigma}^\dagger \]$ and applied a gauge transformation such that $\hat{c}_ {\boldsymbol{k} x} \rightarrow i\hat{c}_ {\boldsymbol{k} x}$ and $\hat{c}_ {\boldsymbol{k} y} \rightarrow i\hat{c}_ {\boldsymbol{k} y}$. By letting $s_x \equiv \sin{(\tfrac{a}{2} k_x)}$ and $s_y \equiv \sin{(\tfrac{a}{2} k_y)}$, we have that
 ```math
 \begin{align}
 & \boldsymbol{H}_{0}(\boldsymbol{k}) \equiv \\
@@ -50,7 +59,9 @@ where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consistin
 \end{align}
 ```
 
-Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data [7, 19]. The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed in the first figure below. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in the second figure below.
+Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data[^3][^6]. The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed in the first figure below. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in the second figure below.
+
+[^6]: M. S. Hybertsen, M. Schlu ̈ter, and N. E. Christensen. Calculation of coulomb-interaction parameters for La<sub>2</sub>CuO<sub>4</sub> using a constrained-density-functional approach. _Phys. Rev. B_, 39:9028–9041, May 1989.
 
 ![01_bands-kinetic](https://github.com/ebolduc37/msc-thesis/assets/44382376/c96208a9-4ff9-4621-8813-d0aa49c8f931)
 ![02_bands-diff](https://github.com/ebolduc37/msc-thesis/assets/44382376/8ee27d77-f888-4957-9c7a-93af0379a11f)
@@ -69,7 +80,7 @@ From the charge order $\hat{H}^\prime$ taking into consideration the intraorbita
 ```
 where an explicit expression for $\boldsymbol{H}_ {1}(\boldsymbol{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $\widetilde{\epsilon}_ d \equiv V_ {pd} + 2V_ {pp}$ in $\textrm{Cu}d_{x^2-y^2}$ and $\widetilde{\epsilon}_ p \equiv 2V_{pd}$ in $\textrm{O}p_x$ and $\textrm{O}p_y$, where $V_{\beta \alpha}$ is the interorbital Coulomb interaction energy.
 
-The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._ [7] is shown at the beginning. The second current pattern can be obtained from the former by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be denoted by $\phi \in \\{ \pm 1 \\}$, where the current pattern investigated by Bulut _et al._ [7] corresponds to $\phi = 1$ and the other to $\phi = -1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv \phi V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
+The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._[^3] is shown at the beginning. The second current pattern can be obtained from the former by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be denoted by $\phi \in \\{ \pm 1 \\}$, where the current pattern investigated by Bulut _et al._[^3] corresponds to $\phi = 1$ and the other to $\phi = -1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv \phi V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
 ```math
 \begin{align}
 & \boldsymbol{H}_{1}(\boldsymbol{k}) \equiv \\
@@ -81,7 +92,7 @@ The focus is made on _physical_ current patterns—meaning that the current is c
 \end{align}
 ```
 
-Under a typical parameter set, $V_ {pd} = 2.2$, $V_ {pp} = 1$, $z_ {pd} = 0.04$, and $z_ {pp} = z_ {pd} / 3$, in accordance with experimental data [7, 19].
+Under a typical parameter set, $V_ {pd} = 2.2$, $V_ {pp} = 1$, $z_ {pd} = 0.04$, and $z_ {pp} = z_ {pd} / 3$, in accordance with experimental data[^3][^6].
 
 ##### 1.1.3　Full Mean-Field Hamiltonian
 
@@ -105,7 +116,9 @@ Four points are of particular interest here: the points $\boldsymbol{k}^ *$ such
 
 ##### 1.1.4　Fermi Surface
 
-We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$ [49]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the average of the $(N^2)^{th}$ and $(N^2+1)^{th}$ item. The resulting Fermi surface is shown in the second figure below with hole and electron pockets in orange and blue respectively.
+We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$[^7]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the average of the $(N^2)^{th}$ and $(N^2+1)^{th}$ item. The resulting Fermi surface is shown in the second figure below with hole and electron pockets in orange and blue respectively.
+
+[^7]: C. Varma, S. Schmitt-Rink, and E. Abrahams. Charge transfer excitations and superconductivity in "ionic" metals. _Solid State Communications_, 62(10):681–685, 1987.
 
 ![06_fermi-energy-Q1](https://github.com/ebolduc37/msc-thesis/assets/44382376/fc70a8e7-3fdd-4a14-89d1-6b6940bd2a23)
 ![07_fermi-pockets](https://github.com/ebolduc37/msc-thesis/assets/44382376/bbe0f307-008e-4d8d-8084-2fdb168707e9)
