@@ -72,11 +72,11 @@ where an explicit expression for $\boldsymbol{H}_ {1}(\boldsymbol{k})$ depends o
 The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._ [7] is shown at the beginning. The second current pattern can be obtained from the former by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be denoted by $\phi \in \\{ \pm 1 \\}$, where the current pattern investigated by Bulut _et al._ [7] corresponds to $\phi = 1$ and the other to $\phi = -1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
 ```math
 \begin{align}
-& \boldsymbol{H}_{1}(\boldsymbol{k}) = \\
+& \boldsymbol{H}_{1}(\boldsymbol{k}) \equiv \\
 & \begin{bmatrix}
 0 & 2 i R_{pd} c_x & 2i R_{pd} c_y \\
--2i R_{pd} s_x & 0 & -4i \phi R_{pp} s_x c_y \\
--2i R_{pd} s_y & 4i \phi R_{pp} c_x s_y & 0
+-2i R_{pd} s_x & 0 & -4i R_{pp} s_x c_y \\
+-2i R_{pd} s_y & 4i R_{pp} c_x s_y & 0
 \end{bmatrix}.
 \end{align}
 ```
