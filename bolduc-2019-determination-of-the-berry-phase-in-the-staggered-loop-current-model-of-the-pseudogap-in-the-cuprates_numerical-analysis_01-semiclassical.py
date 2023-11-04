@@ -1,25 +1,17 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[109]:
-
-
 """Determination of the Berry Phase in the Staggered Loop Current Model of the Pseudogap in the Cuprates:
-Numerical Evaluation
+Numerical Evaluation - Semiclassical Approach
 
 This script generates plots and performs the numerical evaluation of the Berry phase
 following a semiclassical approach as described in the thesis.
 """
 
 
-# In[110]:
-
-
 #===============================================================
 # INITIALIZATION
 #===============================================================
-
-get_ipython().run_line_magic('reset', '')
 
 #--------------
 # USER SELECTION
@@ -45,7 +37,6 @@ import sympy as sym
 import matplotlib.colors as col
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
-get_ipython().run_line_magic('matplotlib', 'inline')
 import warnings
 warnings.simplefilter('ignore', category=NumbaPerformanceWarning)
 warnings.simplefilter('ignore', category=UserWarning)
@@ -92,9 +83,6 @@ def clean_bands(E_k):
             E_f[i][j] = E_r[j][(n_b-1)-i]
         E[i] = np.reshape(E_f[i], (E_k.shape[0], E_k.shape[1]))
     return E
-
-
-# In[111]:
 
 
 #===============================================================
@@ -162,9 +150,6 @@ ax.yaxis.set_label_position("right")
 ax.yaxis.tick_right()
 plt.tight_layout()
 plt.show()
-
-
-# In[112]:
 
 
 #===============================================================
@@ -254,9 +239,6 @@ plt.tight_layout()
 plt.show()
 
 
-# In[113]:
-
-
 #===============================================================
 # FERMI SURFACE
 #===============================================================
@@ -301,9 +283,6 @@ ax.yaxis.set_label_position("right")
 ax.yaxis.tick_right()
 plt.tight_layout()
 plt.show()
-
-
-# In[120]:
 
 
 #===============================================================
@@ -359,9 +338,6 @@ plt.tight_layout()
 plt.show()
 
 
-# In[115]:
-
-
 #===============================================================
 # BERRY CURVATURE
 #===============================================================
@@ -408,7 +384,7 @@ Bz_R = clean_bands(Bz_k(X_R, Y_R))
 # VISUALIZATION
 #-----------------------------------
 
-# Z-component of the Berry curvature around pi/2*(-1,1)
+# Z-component of the Berry curvature of the lowest band of the high-energy subspace around pi/2*(-1,1)
 fig = plt.figure(figsize=(5,5))
 ax = plt.axes()
 ax.set_title('Z-Component of the Berry Curvature of the\nLowest Band of the '
@@ -426,7 +402,7 @@ fig.colorbar(c)
 plt.tight_layout()
 plt.show()
 
-# Z-component of the Berry curvature around pi/2*(1,1)
+# Z-component of the Berry curvature of the lowest band of the high-energy subspace around pi/2*(1,1)
 fig = plt.figure(figsize=(5,5))
 ax = plt.axes()
 ax.set_title('Z-Component of the Berry Curvature of the\nLowest Band of the '
@@ -443,9 +419,6 @@ c.set_clim(-cMax, cMax)
 fig.colorbar(c)
 plt.tight_layout()
 plt.show()
-
-
-# In[116]:
 
 
 #===============================================================
@@ -468,7 +441,7 @@ sg = np.sign(Bz_k(point_B[0]*np.pi/2,point_B[1]*np.pi/2)[1])
 # VISUALIZATION
 #-----------------------------------
 
-# 1: z-component of the Berry curvature of the lowest upper energy band around (pi/2a, pi/2a)
+# Z-component of the Berry curvature of the lowest band of the high-energy subspace around pi/2*(1,1)
 fig = plt.figure(figsize=(5,5))
 ax = plt.axes()
 ax.set_title('Z-Component of the Berry Curvature of the\nLowest Band of the '
@@ -488,7 +461,7 @@ fig.colorbar(c)
 plt.tight_layout()
 plt.show()
 
-# 2: zoom on the z-component of the Berry curvature of the lowest upper energy band around (pi/2a, pi/2a)
+# Zoom on the z-component of the Berry of the lowest band of the high-energy subspace curvature around pi/2*(1,1)
 fig = plt.figure(figsize=(5,5))
 ax = plt.axes()
 ax.set_title('Z-Component of the Berry Curvature of the\nLowest Band of the '
@@ -509,9 +482,6 @@ c.set_clim(0, cMaxAbs)
 fig.colorbar(c)
 plt.tight_layout()
 plt.show()
-
-
-# In[117]:
 
 
 #===============================================================
@@ -539,10 +509,4 @@ berry_phase = [round(berry_phase[0], dec), round(berry_phase[1], dec)]
 
 # Berry phase in percentage of pi for the lowest upper energy band around (pi/2a, pi/2a)
 print(berry_phase)
-
-
-# In[ ]:
-
-
-
 
