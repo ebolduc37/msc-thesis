@@ -190,11 +190,7 @@ For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtai
 
 ### 2　Peierls Substitution
 
-Bla
-
-Bla
-
-Bla
+_Work in progress._
 
 
 
