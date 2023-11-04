@@ -52,8 +52,9 @@ where $BZ^\prime$ is the reduced Brillouin zone pictured in Figure 4.4 consistin
 
 Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data [7, 19]. The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed in the first figure below. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in the second figure below.
 
-![H_0](https://github.com/ebolduc37/msc-thesis/assets/44382376/117cb73c-5d12-43aa-ae1d-01d2ab6c5566)
-![diff_E_n](https://github.com/ebolduc37/msc-thesis/assets/44382376/805d5a02-5b1e-4fc0-a4bc-66390c9cbbb5)
+![01_bands-kinetic](https://github.com/ebolduc37/msc-thesis/assets/44382376/c96208a9-4ff9-4621-8813-d0aa49c8f931)
+![02_bands-diff](https://github.com/ebolduc37/msc-thesis/assets/44382376/8ee27d77-f888-4957-9c7a-93af0379a11f)
+
 
 ##### 1.1.2　Mean-Field Decomposition of the Charge Order
 
@@ -99,15 +100,15 @@ i \lambda \boldsymbol{V}^T (\boldsymbol{k}) & \boldsymbol{H}_{0}(\boldsymbol{k} 
 
 Four points are of particular interest here: the points $\boldsymbol{k}^ *$ such that $|k^ *_ x| = |k^ *_ y| = \tfrac{\pi}{2a}$, a set that we denote by $D$. These momenta correspond to the 2-fold degeneracy points of the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ as seen in the second figure below for $\phi = 1$. Identical results are obtained when $\phi = -1$.
 
-![H_MF_bands_all](https://github.com/ebolduc37/msc-thesis/assets/44382376/6a7fc6f8-8d2e-4199-a2bf-50c97aa9d7f4)
-![H_MF_bands_high](https://github.com/ebolduc37/msc-thesis/assets/44382376/57951b05-93c6-4da7-a747-0a3bf1bea5cd)
+![03_bands-MF](https://github.com/ebolduc37/msc-thesis/assets/44382376/ed1beec7-799a-437e-949d-708124f19a4c)
+![04_high-energy-bands-MF](https://github.com/ebolduc37/msc-thesis/assets/44382376/4691dd4e-5612-4bcb-9099-ff5efb04ab90)
 
 ##### 1.1.4　Fermi Surface
 
 We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$ [49]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the average of the $(N^2)^{th}$ and $(N^2+1)^{th}$ item. The resulting Fermi surface is shown in the second figure below with hole and electron pockets in orange and blue respectively.
 
-![H_MF_bands_high_F](https://github.com/ebolduc37/msc-thesis/assets/44382376/d29dbfce-ed17-4bcc-9974-a275da116828)
-![Fermi_pockets](https://github.com/ebolduc37/msc-thesis/assets/44382376/3497f477-5264-4094-bae2-5e944335f97f)
+![06_fermi-energy-Q1](https://github.com/ebolduc37/msc-thesis/assets/44382376/fc70a8e7-3fdd-4a14-89d1-6b6940bd2a23)
+![07_fermi-pockets](https://github.com/ebolduc37/msc-thesis/assets/44382376/bbe0f307-008e-4d8d-8084-2fdb168707e9)
 
 #### 1.2　Berry Phase
 
@@ -167,13 +168,11 @@ We introduce the mass term $\xi > 0$ to first order in perturbation theory by ta
 \end{align}
 ```
 
+By introducing a mass term $\xi = 1 \cdot 10^{-5} \[a/\pi\]^{-1}$ as defined later on, the energy bands stay identical except near the degeneracy points where the degeneracy is lifted, as shown below around the point $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$.
+
+![08_degeneracy-with-mass](https://github.com/ebolduc37/msc-thesis/assets/44382376/552ad311-5c74-499f-9bb6-0eaae96f09d2)
+
 ##### 1.2.2　Numerical Evaluation
-
-The mass term needs to be chosen appropriately for the numerical evaluation of the Berry phase. For a simple linear dispersion, a fraction $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ of the delta function's weight is lost outside of a radius $\rho$ around the Dirac point. Hence, $\rho$ and $xi$ must be chosen for $\rho / \xi$ to be large enough. In particular, about $1%$ of the delta function's weight is lost when taking $\rho/\xi = 100$. Asymmetry in the growth rate of the gap needs to be considered when choosing the mass term and the grid. We can assume the loss from a more general dispersion to be negligible because the correction is of order $\lambda \ll 1$ under a typical parameter set.
-
-It is enough to only compute the Berry phase of the hole pocket surrounding $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ for an electron in the lowest energy band of the high-energy subspace.
-
-Additionally, we need to take a few things specific to our case into consideration. It can be seen numerically that the distance between the Dirac point and the boundary of the surrounding hole pocket ranges from approximately $0.025\[a/\pi\]^{-1}$ to $0.16\[a/\pi\]^{-1}$ for both current patterns. To make the calculation more efficient, the elongated shape of the hole pocket and its positioning are taken into account. Thus, the origin of the momentum space is translated to $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ to correspond to the degeneracy point; the space is then rotated clockwise by $\pi/4$. Furthermore, a rectangular grid centered at the origin of this transformed momentum space is taken with the horizontal 10 times shorter than the vertical. The same number of discrete points is taken horizontally and vertically. Specifically, the vertical side is set to have a length of $1 \cdot 10^{-2} \[a/\pi\]^{-1}$ with a grid spacing of $5 \cdot 10^{-6} \[a/\pi\]^{-1}$ along this direction. These numbers differ from the thesis to give more precise results. Finally, a mass term of $\xi = 1 \cdot 10^{-5} \[a/\pi\]^{-1}$ is chosen.
 
 Given a Hamiltonian $H(\boldsymbol{k})$, the Berry curvature $\boldsymbol{B}_ {n}(\boldsymbol{k})$ can be evaluated at any point $\boldsymbol{k}$ with the following equation:
 ```math
@@ -184,6 +183,15 @@ i \sum_{m \neq n} \frac{ \langle \nabla H (\boldsymbol{k}) \rangle_{nm} \times \
 where $\langle \nabla H (\boldsymbol{k})\rangle_ {mn} = \bra{m(\boldsymbol{k})} \nabla H (\boldsymbol{k}) \ket{n(\boldsymbol{k})}$ for $\\{ \ket{n (\boldsymbol{k})} \\}$ the (orthonormal) set of energy eigenstates of $H(\boldsymbol{k})$. Thus, we apply the above equation to $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$, the mean-field Hamiltonian with the mass term.
 
 At each point $\boldsymbol{k}$, we calculate numerically the eigenstates of $\boldsymbol{H}_ {0}(\boldsymbol{k})$ and $\boldsymbol{H}_ {0}(\boldsymbol{k}+\boldsymbol{Q})$ to derive $\boldsymbol{M}(\boldsymbol{k}) = \ket{+(\boldsymbol{k})} \bra{+(\boldsymbol{k}+\boldsymbol{Q})}$ and obtain $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$. Then, we calculate numerically the eigenvalues and eigenstates of $\boldsymbol{H}_ {MF}^\xi(\boldsymbol{k})$ to use in the equation of the Berry curvature above. Take note that we must take the gradient of $\boldsymbol{H}_ {MF}(\boldsymbol{k})$ as we do not have a closed-form expression of the mass term in terms of $\boldsymbol{k}$. Fortunately, this is not a problem because the contribution of the gradient of the mass term in the total is negligible.
+
+The mass term needs to be chosen appropriately for the numerical evaluation of the Berry phase. For a simple linear dispersion, a fraction $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ of the delta function's weight is lost outside of a radius $\rho$ around the Dirac point. Hence, $\rho$ and $xi$ must be chosen for $\rho / \xi$ to be large enough. In particular, about $1%$ of the delta function's weight is lost when taking $\rho/\xi = 100$. Asymmetry in the growth rate of the gap needs to be considered when choosing the mass term and the grid. We can assume the loss from a more general dispersion to be negligible because the correction is of order $\lambda \ll 1$ under a typical parameter set.
+
+It is enough to only compute the Berry phase of the hole pocket surrounding $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ for an electron in the lowest energy band of the high-energy subspace. Additionally, we need to take a few things specific to our case into consideration. It can be seen numerically that the distance between the Dirac point and the boundary of the surrounding hole pocket ranges from approximately $0.025\[a/\pi\]^{-1}$ to $0.16\[a/\pi\]^{-1}$ for both current patterns.
+
+To make the calculation more efficient, the elongated shape of the hole pocket and its positioning are taken into account. Thus, the origin of the momentum space is translated to $(\tfrac{\pi}{2a}, \tfrac{\pi}{2a})$ to correspond to the degeneracy point; the space is then rotated clockwise by $\pi/4$. Furthermore, a rectangular grid centered at the origin of this transformed momentum space is taken with the horizontal 10 times shorter than the vertical. The same number of discrete points is taken horizontally and vertically. Specifically, the vertical side is set to have a length of $1 \cdot 10^{-2} \[a/\pi\]^{-1}$ with a grid spacing of $5 \cdot 10^{-6} \[a/\pi\]^{-1}$ along this direction. These numbers differ from the thesis to give more precise results. Finally, a mass term of $\xi = 1 \cdot 10^{-5} \[a/\pi\]^{-1}$ is chosen.
+
+![11_berry-curvature](https://github.com/ebolduc37/msc-thesis/assets/44382376/6c3e35db-0f61-4818-a7b1-965700d3b903)
+![12_berry-curvature-zoom](https://github.com/ebolduc37/msc-thesis/assets/44382376/df9e9102-f8d3-46bc-8a57-17694e1519a3)
 
 Finally, we perform a numerical integration over the area of the hole pocket to obtain the Berry phase. The results are listed in the table below.
 
