@@ -499,8 +499,7 @@ berry_phase = [100*sum(Bz[1].flatten())*dA/np.pi, 100/np.sqrt(((side_B[0]/2)/xi)
 
 # Rounding of the Berry phase in terms of the uncertainty
 dec = 0
-while (round(np.trunc(berry_phase[1]*10**dec)) == 0):
-    dec += 1
+while (round(np.trunc(berry_phase[1]*10**dec)) == 0): dec += 1
 berry_phase = [round(berry_phase[0], dec), round(berry_phase[1], dec)]
 
 #-----------------------------------
