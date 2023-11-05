@@ -492,7 +492,7 @@ plt.show()
 # COMPUTATION
 #-----------------------------------
 
-# Evaluation of the Berry phase of the lowest upper energy band around point_B*(pi/2, pi/2)
+# Evaluation of the Berry phase of the lowest band of the high-energy subspace around point_B*(pi/2, pi/2)
 # for a counterclockwise orbit in percentage of pi
 dA = side_B[0]*side_B[1]*(np.pi/(n_B-1))**2
 berry_phase = [100*sum(Bz[1].flatten())*dA/np.pi, 100/np.sqrt(((side_B[0]/2)/xi)**2+1)/np.pi]
@@ -506,6 +506,7 @@ berry_phase = [round(berry_phase[0], dec), round(berry_phase[1], dec)]
 # PRINT
 #-----------------------------------
 
-# Berry phase in percentage of pi for the lowest upper energy band around (pi/2a, pi/2a)
+# Berry phase of the lowest band of the high-energy subspace around point_B*(pi/2a, pi/2a)
+# for a counterclockwise orbit in percentage of pi
 print(berry_phase)
 
