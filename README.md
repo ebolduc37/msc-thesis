@@ -207,8 +207,12 @@ For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtai
 
 #### 2.2 Comparison of the Semiclassical Approach with the Peierls Substitution
 
-![13_energy-distribution](https://github.com/ebolduc37/msc-thesis/assets/44382376/475e7631-6287-417c-8e6a-eea596202a4a)
-![14_energy-plateaux](https://github.com/ebolduc37/msc-thesis/assets/44382376/f1837be5-f937-4503-93ff-24a1203b845f)
+![13_energy-distribution-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/08137e6f-c9c0-480f-bdbc-f8cad5477f9e)
+
+![14_energy-plateaux-top-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/d48899ee-a2f8-437c-96df-9bf313622eff)
+![15_energy-plateaux-bottom-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/189a3396-306c-4817-833c-2480c15de6fe)
+
+
 
 | $\phi$ | $\delta$           |
 | :----: | :----------------: |
