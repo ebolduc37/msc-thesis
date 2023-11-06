@@ -196,8 +196,8 @@ Finally, we perform a numerical integration over the area of the hole pocket to 
 
 | $\phi$ | $\gamma_-(C)/\pi$ | $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ |
 | :----: | :---------------: | :-------------------------------------: |
-| $+1$   | $99.4\%$          | $0.6\%$                                 |
-| $-1$   | $99.3\%$          | $0.6\%$                                 |
+| $+1$   | $99.4\\%$          | $0.6\\%$                                 |
+| $-1$   | $99.3\\%$          | $0.6\\%$                                 |
 
 For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtained, all within expectations: almost equal to $\pi$, but not exactly because of the delta function's weight that is lost outside of the grid. In fact, we obtain a total value of $\pi$ within the rounding of significant figures if we add the weight loss to the Berry phase. Unknown discretization errors may be at play in the small discrepancy.
 
@@ -217,7 +217,7 @@ For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtai
 | $\phi$ | $\delta$           |
 | :----: | :----------------: |
 | $+1$   | $-0.001 \pm 0.005$ |
-| $-1$   | -                  |
+| $-1$   | $+0.001 \pm 0.008$    |
 
 
 
