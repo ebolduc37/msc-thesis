@@ -195,15 +195,25 @@ To make the calculation more efficient, the elongated shape of the hole pocket a
 Finally, we perform a numerical integration over the area of the hole pocket to obtain the Berry phase. The results are listed in the table below.
 
 | $\phi$ | $\gamma_-(C)/\pi$ | $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ |
-| :----: | :---------------: | :--: |
-| $+1$   | 99.4%             | 0.6% |
-| $-1$   | 99.3%             | 0.6% |
+| :----: | :---------------: | :-------------------------------------: |
+| $+1$   | $99.4\%$          | $0.6\%$                                 |
+| $-1$   | $99.3\%$          | $0.6\%$                                 |
 
 For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtained, all within expectations: almost equal to $\pi$, but not exactly because of the delta function's weight that is lost outside of the grid. In fact, we obtain a total value of $\pi$ within the rounding of significant figures if we add the weight loss to the Berry phase. Unknown discretization errors may be at play in the small discrepancy.
 
 ### 2　Peierls Substitution
 
-_Work in progress._
+#### 2.1 Quantum Treatment of the Magnetic Field through Peierls Substitution
+
+#### 2.2 Comparison of the Semiclassical Approach with the Peierls Substitution
+
+![13_energy-distribution](https://github.com/ebolduc37/msc-thesis/assets/44382376/475e7631-6287-417c-8e6a-eea596202a4a)
+![14_energy-plateaux](https://github.com/ebolduc37/msc-thesis/assets/44382376/f1837be5-f937-4503-93ff-24a1203b845f)
+
+| $\phi$ | $\delta$           |
+| :----: | :----------------: |
+| $+1$   | $-0.001 \pm 0.005$ |
+| $-1$   | -                  |
 
 
 
