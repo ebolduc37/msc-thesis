@@ -203,7 +203,29 @@ For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtai
 
 ### 2　Peierls Substitution
 
+A different method that does not rely on the semiclassical approach can be used to derive the Landau-like quantization relation. Known as the Peierls substitution, this particular approach allows us to incorporate an external magnetic field in a Bloch electron problem.
+
 #### 2.1 Quantum Treatment of the Magnetic Field through Peierls Substitution
+
+In quantum mechanics, an external magnetic field is typically introduced in equations by redefining the canonical momentum of a particle in terms of the magnetic vector potential $\boldsymbol{A}(\boldsymbol{r})$ in function of position $\boldsymbol{r}$ [48]:
+```math
+\boldsymbol{p}
+\rightarrow
+\boldsymbol{p} - q \boldsymbol{A}(\boldsymbol{r}),
+```
+where $q$ is the particle’s charge. However, the energy eigenstates of electrons in a crystal lattice are no longer the usual Bloch states, but _modified_ Bloch states instead as the initial discrete translational invariance of the Hamiltonian is now broken [27].
+
+When the vector potential varies slowly over a lattice cell, the effect of the transformation is to add a phase factor dependent on the vector potential to the hopping terms of the Hamiltonian [14]:
+```math
+\hat{c}_{\boldsymbol{j}}^\dagger \hat{c}_{\boldsymbol{i}}
+\rightarrow
+\exp{\left[ 2\pi i \frac{q}{h} \int_{\boldsymbol{R}_\boldsymbol{i}}^{\boldsymbol{R}_\boldsymbol{j}} \boldsymbol{A}(\boldsymbol{r}) \cdot d\boldsymbol{r} \right]}
+\hat{c}_{\boldsymbol{j}}^\dagger \hat{c}_{\boldsymbol{i}}
+,
+```
+where the path of the integral is by convention the shortest path from $\boldsymbol{R}_ \boldsymbol{i}$ to $\boldsymbol{R}_ \boldsymbol{j}$. This result can easily be derived from the path-integral formulation of quantum mechanics [48]: as the classical action changes through the redefinition of the canonical momentum, the amplitude of a path gets a phase factor from the line integral over the path.
+
+According to the justification found at the end of the previous section, the gap amplitude is assumed to be approximately constant over the range of magnetic field magnitudes relevant to quantum oscillation experiments considered in this section. In such a way, all of the terms in the mean-field $\pi\textrm{LC}$ Hamiltonian are assumed to transform following the transformation above under a typical parameter set.
 
 #### 2.2 Comparison of the Semiclassical Approach with the Peierls Substitution
 
