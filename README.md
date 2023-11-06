@@ -209,8 +209,8 @@ For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtai
 
 ![13_energy-distribution-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/08137e6f-c9c0-480f-bdbc-f8cad5477f9e)
 
-![14_energy-plateaux-top-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/d48899ee-a2f8-437c-96df-9bf313622eff)
-![15_energy-plateaux-bottom-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/189a3396-306c-4817-833c-2480c15de6fe)
+![14_energy-plateaux-top-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/15fce462-498d-43d3-980a-5c078b4ed1d6)
+![15_energy-plateaux-bottom-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/9f57de6f-218b-4ce4-8822-d09f64f182f7)
 
 
 
