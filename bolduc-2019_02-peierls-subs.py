@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[110]:
-
-
 """Determination of the Berry Phase in the Staggered Loop Current Model of the Pseudogap in the Cuprates:
 Numerical Evaluation - Peierls Substitution
 
@@ -12,14 +9,9 @@ by comparing a semiclassical approach with a Peierls substitution approach as de
 """
 
 
-# In[156]:
-
-
 #===============================================================
 # INITIALIZATION
 #===============================================================
-
-get_ipython().run_line_magic('reset', '')
 
 #--------------
 # USER SELECTION
@@ -95,9 +87,6 @@ def clean_bands_line(E_k):
     return E
 
 
-# In[157]:
-
-
 #===============================================================
 # MEAN-FIELD HAMILTONIAN
 #===============================================================
@@ -167,9 +156,6 @@ E_meet = E_deg[-2]
 # Energy at which the electron pockets disappear
 L = np.linspace(0, np.pi/2, n)
 E_max = max(clean_bands_line(E_MF_k(np.pi-L, L)).flatten())
-
-
-# In[158]:
 
 
 #===============================================================
@@ -269,9 +255,6 @@ E_B = np.sort(clean_bands(E_B_k(X_B, Y_B)).flatten())
 N = len(E_B)
 
 
-# In[159]:
-
-
 #-----------------------------------
 # VISUALIZATION
 #-----------------------------------
@@ -288,9 +271,6 @@ plt.xlim(100, 0)
 plt.xlabel(r'State Index (%)'), plt.ylabel(r'$E/t_{pd}$')
 plt.tight_layout()
 plt.show()
-
-
-# In[160]:
 
 
 #===============================================================
@@ -380,9 +360,6 @@ plt.tight_layout()
 plt.show()
 
 
-# In[161]:
-
-
 #===============================================================
 # BOUND ON THE BERRY PHASE
 #===============================================================
@@ -410,10 +387,3 @@ delta = [round(delta[0], dec), round(delta[1], dec)]
 
 # Mismatch between n_SC and n_PS
 print(delta)
-
-
-# In[ ]:
-
-
-
-
