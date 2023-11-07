@@ -13,13 +13,13 @@ The present section is a short summary of the numerical analysis behind this the
 
 ### 1　Semiclassical Approach
 
-In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in the figure below, leading to this phase being referred to as the circulating current phase[^1]. It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase[^2].
+In an effort to describe the pseudogap phase of cuprates, Varma suggested in 1997 a competing order model, a three-band model with the particularity of having current circulating in each unit cell as in the figure below, leading to this phase being referred to as the circulating current phase[\[1\]](#ref). It was argued then and shown later that the properties of this phase are similar to those of the pseudogap phase[\[2\]](#ref).
 
 ![Color-online-Staggered-pattern-of-spontaneous-loop-currents-Open-circle-x-and-y](https://github.com/ebolduc37/msc-thesis/assets/44382376/5d20d3f6-394a-4f8d-bcdd-83936f4a8cea)
 
-More recently, Bulut _et al._ have investigated a phase with a staggered pattern of intra-unit cell loop currents (LCs) called $\pi\textrm{LC}$ phase[^3]. It features the ordering wave vector $\boldsymbol{Q} = (\tfrac{\pi}{a}, \tfrac{\pi}{a})$ where $a$ is the lattice spacing, one that is relevant to cuprates[^4], which plays an essential role in the Fermi surface reconstruction suggested to be behind the small Fermi surface of the pseudogap phase and the hole and electron pockets observed in experiments[^5].
+More recently, Bulut _et al._ have investigated a phase with a staggered pattern of intra-unit cell loop currents (LCs) called $\pi\textrm{LC}$ phase[\[3\]](#ref). It features the ordering wave vector $\boldsymbol{Q} = (\tfrac{\pi}{a}, \tfrac{\pi}{a})$ where $a$ is the lattice spacing, one that is relevant to cuprates[\[4\]](#ref), which plays an essential role in the Fermi surface reconstruction suggested to be behind the small Fermi surface of the pseudogap phase and the hole and electron pockets observed in experiments[\[5\]](#ref).
 
-The $\pi\textrm{LC}$ Hamiltonian is written on a square lattice and each site corresponds to a unit cell, i.e., a CuO<sub>2</sub> plane containing a copper $d_{x^2-y^2}$ orbital and oxygen $p_x$ and $p_y$ orbitals, denoted by $\textrm{Cu}d_{x^2-y^2}$, $\textrm{O}p_x$, and $\textrm{O}p_y$. The relevant bonds are the nearest neighbor $p–d$ and $p–p$ bonds. As discussed above, these bonds exhibit intra-unit cell loop currents, equivalent to directional hopping. Additionally, the direction of the current must be inverted between unit cells to obtain the right Fermi surface reconstruction. Any state under such considerations breaks both time-reversal and lattice-translation symmetries. The specific staggered pattern of intertwined LCs studied by Bulut _et al._[^3] is shown in the figure above. Note that this state has 4-fold rotational symmetry and conserves current. The $\pi\textrm{LC}$ model analyzed thereafter is the same as the one explored by Bulut _et al._[^3], but an alternate current pattern is also investigated—ultimately leading to the same Berry phase.
+The $\pi\textrm{LC}$ Hamiltonian is written on a square lattice and each site corresponds to a unit cell, i.e., a CuO<sub>2</sub> plane containing a copper $d_{x^2-y^2}$ orbital and oxygen $p_x$ and $p_y$ orbitals, denoted by $\textrm{Cu}d_{x^2-y^2}$, $\textrm{O}p_x$, and $\textrm{O}p_y$. The relevant bonds are the nearest neighbor $p–d$ and $p–p$ bonds. As discussed above, these bonds exhibit intra-unit cell loop currents, equivalent to directional hopping. Additionally, the direction of the current must be inverted between unit cells to obtain the right Fermi surface reconstruction. Any state under such considerations breaks both time-reversal and lattice-translation symmetries. The specific staggered pattern of intertwined LCs studied by Bulut _et al._[\[3\]](#ref) is shown in the figure above. Note that this state has 4-fold rotational symmetry and conserves current. The $\pi\textrm{LC}$ model analyzed thereafter is the same as the one explored by Bulut _et al._[\[3\]](#ref), but an alternate current pattern is also investigated—ultimately leading to the same Berry phase.
 
 The $\pi\textrm{LC}$ Hamiltonian denoted by $\hat{H}$ can be broken down into two parts: the kinetic energy $\hat{H}_0$ and the charge order $\hat{H}^\prime$. Each one can be solved separately. However, a mean-field approach is needed to solve the charge order, which will lead to the final diagonalized Hamiltonian being a mean-field approximation. Since we are looking for solutions that do not break spin-rotational symmetries, the spin labels are omitted going forward.
 
@@ -52,7 +52,7 @@ where $BZ^\prime$ is the reduced Brillouin zone consisting of the closed ball of
 \end{align}
 ```
 
-Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data[^3][^6]. The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed in the first figure below. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in the second figure below.
+Under a typical parameter set, $t_{pd} = 1$ to define the unit energy, $t_{pp} = −0.5$ and $\epsilon_d − \epsilon_p = 2.5$, in accordance with experimental data[\[3,6\]](#ref). The energy gap between the highest energy band of $\boldsymbol{H}_{0}(\boldsymbol{k})$ and the two other bands can be observed in the first figure below. Additionally, the property that $E_n (\boldsymbol{k} + \boldsymbol{Q}) = E_n (\boldsymbol{k})$ if and only if $\boldsymbol{k} \in \partial BZ^\prime$ can be observed by inspecting the points where $| E_n (\boldsymbol{k}) - E_n (\boldsymbol{k} + \boldsymbol{Q}) | < 0.01$ as seen in the second figure below.
 
 ![01_bands-kinetic](https://github.com/ebolduc37/msc-thesis/assets/44382376/c96208a9-4ff9-4621-8813-d0aa49c8f931)
 ![02_bands-diff](https://github.com/ebolduc37/msc-thesis/assets/44382376/8ee27d77-f888-4957-9c7a-93af0379a11f)
@@ -71,7 +71,7 @@ From the charge order $\hat{H}^\prime$ taking into consideration the intraorbita
 ```
 where an explicit expression for $\boldsymbol{H}_ {1}(\boldsymbol{k})$ depends on the current pattern. Note that $\widetilde{\boldsymbol{\epsilon}}$ simply represents a shift in the orbital energies equivalent to $\widetilde{\epsilon}_ d \equiv V_ {pd} + 2V_ {pp}$ in $\textrm{Cu}d_{x^2-y^2}$ and $\widetilde{\epsilon}_ p \equiv 2V_{pd}$ in $\textrm{O}p_x$ and $\textrm{O}p_y$, where $V_{\beta \alpha}$ is the interorbital Coulomb interaction energy.
 
-The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._[^3] is shown at the beginning. The second current pattern can be obtained from the former by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be denoted by $\phi \in \\{ \pm 1 \\}$, where the current pattern investigated by Bulut _et al._[^3] corresponds to $\phi = 1$ and the other to $\phi = -1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv \phi V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
+The focus is made on _physical_ current patterns—meaning that the current is conserved on each orbital site—with 4-fold rotational symmetry. There are only two possible inequivalent physical current patterns with 4-fold rotational symmetry. The one investigated by Bulut _et al._[\[3\]](#ref) is shown at the beginning. The second current pattern can be obtained from the former by inverting the current along $p–p$ bonds. Throughout the rest of this work, the two current patterns will be denoted by $\phi \in \\{ \pm 1 \\}$, where the current pattern investigated by Bulut _et al._[\[3\]](#ref) corresponds to $\phi = 1$ and the other to $\phi = -1$. Explicitly, we have for these two current patterns under the gauge transformation from earlier that $\widetilde{\boldsymbol{\epsilon}}$ stays invariant while, if we let $R_{pd} \equiv V_{pd} z_{pd} / t_{pd}$, $R_{pp} \equiv \phi V_{pp} z_{pp} / t_{pp}$, $c_x \equiv \cos{(\tfrac{a}{2} k_x)}$, and $c_y \equiv \cos{(\tfrac{a}{2} k_y)}$,
 ```math
 \begin{align}
 & \boldsymbol{H}_{1}(\boldsymbol{k}) \equiv \\
@@ -83,7 +83,7 @@ The focus is made on _physical_ current patterns—meaning that the current is c
 \end{align}
 ```
 
-Under a typical parameter set, $V_ {pd} = 2.2$, $V_ {pp} = 1$, $z_ {pd} = 0.04$, and $z_ {pp} = z_ {pd} / 3$, in accordance with experimental data[^3][^6].
+Under a typical parameter set, $V_ {pd} = 2.2$, $V_ {pp} = 1$, $z_ {pd} = 0.04$, and $z_ {pp} = z_ {pd} / 3$, in accordance with experimental data[\[3,6\]](#ref).
 
 ##### 1.1.3　Full Mean-Field Hamiltonian
 
@@ -107,7 +107,7 @@ Four points are of particular interest here: the points $\boldsymbol{k}^ *$ such
 
 ##### 1.1.4　Fermi Surface
 
-We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$[^7]; the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the average of the $(N^2)^{th}$ and $(N^2+1)^{th}$ item. The resulting Fermi surface is shown in the second figure below with hole and electron pockets in orange and blue respectively.
+We put our focus on the two highest energy bands which are half-filled and related to the energy of the $\textrm{Cu}d_{x^2-y^2}$[\[7\]](#ref); the other energy bands are irrelevant because they are restricted to energies well below the Fermi energy. To find the Fermi energy numerically, we list the energies from the high-energy subspace of $\boldsymbol{H}_{MF}(\boldsymbol{k})$ for all $N^2$ momenta, sort the resulting list of $2 N^2$ items, and return the average of the $(N^2)^{th}$ and $(N^2+1)^{th}$ item. The resulting Fermi surface is shown in the second figure below with hole and electron pockets in orange and blue respectively.
 
 ![06_fermi-energy-Q1](https://github.com/ebolduc37/msc-thesis/assets/44382376/fc70a8e7-3fdd-4a14-89d1-6b6940bd2a23)
 ![07_fermi-pockets](https://github.com/ebolduc37/msc-thesis/assets/44382376/bbe0f307-008e-4d8d-8084-2fdb168707e9)
@@ -202,7 +202,7 @@ In quantum mechanics, an external magnetic field is typically introduced in equa
 \rightarrow
 \boldsymbol{p} - q \boldsymbol{A}(\boldsymbol{r}),
 ```
-where $q$ is the particle’s charge[^8]. However, the energy eigenstates of electrons in a crystal lattice are no longer the usual Bloch states, but _modified_ Bloch states instead as the initial discrete translational invariance of the Hamiltonian is now broken [^9].
+where $q$ is the particle’s charge[\[8\]](#ref). However, the energy eigenstates of electrons in a crystal lattice are no longer the usual Bloch states, but _modified_ Bloch states instead as the initial discrete translational invariance of the Hamiltonian is now broken[\[9\]](#ref).
 
 When the vector potential varies slowly over a lattice cell, the effect of the transformation is to add a phase factor dependent on the vector potential to the hopping terms of the Hamiltonian:
 ```math
@@ -212,7 +212,7 @@ When the vector potential varies slowly over a lattice cell, the effect of the t
 \hat{c}_{\boldsymbol{j}}^\dagger \hat{c}_{\boldsymbol{i}}
 ,
 ```
-where the path of the integral is by convention the shortest path from $\boldsymbol{R}_ \boldsymbol{i}$ to $\boldsymbol{R}_ \boldsymbol{j}$[^10]. This result can easily be derived from the path-integral formulation of quantum mechanics [^8]. As the classical action changes through the redefinition of the canonical momentum, the amplitude of a path gets a phase factor from the line integral over the path.
+where the path of the integral is by convention the shortest path from $\boldsymbol{R}_ \boldsymbol{i}$ to $\boldsymbol{R}_ \boldsymbol{j}$[\[10\]](#ref). This result can easily be derived from the path-integral formulation of quantum mechanics[\[8\]](#ref). As the classical action changes through the redefinition of the canonical momentum, the amplitude of a path gets a phase factor from the line integral over the path.
 
 According to the justification found at the end of the previous section, the gap amplitude is assumed to be approximately constant over the range of magnetic field magnitudes relevant to quantum oscillation experiments considered in this section. In such a way, all of the terms in the mean-field $\pi\textrm{LC}$ Hamiltonian are assumed to transform following the transformation above under a typical parameter set.
 
@@ -220,7 +220,7 @@ Fortunately, the mean-field $\pi\textrm{LC}$ Hamiltonian can be diagonalized for
 
 ![MagneticCell](https://github.com/ebolduc37/msc-thesis/assets/44382376/c86a1099-4694-4055-9ee2-948bf8bc22e1)
 
-Rotating the system by $\pi/4$ clockwise like in the previous section leads to magnetic cells elongated in the $y$-direction. Furthermore, the magnetic Brillouin zone $BZ_q$ associated with a system having $\chi = p/q$ is the rectangle $\[−\tfrac{\pi}{a}, \tfrac{\pi}{a}\] \times \[−\tfrac{\pi}{aq}, \tfrac{\pi}{aq}\]$. A few factors need to be taken into consideration when diagonalizing the Hamiltonian on a discrete grid in momentum space. First, the number of grid points in the $x$-direction has to be $q$ times greater than in the $y$-direction in order to have a square grid in momentum space. However, it is computationally expensive to take such a grid because of the increasing number of points as $q$ gets large. On top of this, the mean-field $\pi\textrm{LC}$ Hamiltonian matrix is a $6q \times 6q$ matrix and thus takes longer to diagonalize at any point as $q$ increases. Thankfully, taking a low-resolution rectangular grid is enough in flat-level regimes [^4], which we are solely concerned with.
+Rotating the system by $\pi/4$ clockwise like in the previous section leads to magnetic cells elongated in the $y$-direction. Furthermore, the magnetic Brillouin zone $BZ_q$ associated with a system having $\chi = p/q$ is the rectangle $\[−\tfrac{\pi}{a}, \tfrac{\pi}{a}\] \times \[−\tfrac{\pi}{aq}, \tfrac{\pi}{aq}\]$. A few factors need to be taken into consideration when diagonalizing the Hamiltonian on a discrete grid in momentum space. First, the number of grid points in the $x$-direction has to be $q$ times greater than in the $y$-direction in order to have a square grid in momentum space. However, it is computationally expensive to take such a grid because of the increasing number of points as $q$ gets large. On top of this, the mean-field $\pi\textrm{LC}$ Hamiltonian matrix is a $6q \times 6q$ matrix and thus takes longer to diagonalize at any point as $q$ increases. Thankfully, taking a low-resolution rectangular grid is enough in flat-level regimes[\[4\]](#ref), which we are solely concerned with.
 
 ![13_energy-distribution-flip_1x1_q100](https://github.com/ebolduc37/msc-thesis/assets/44382376/d443d7f1-f433-41f0-ba04-cba171aa9b2c)
 
@@ -230,7 +230,7 @@ On the one hand, there is only a small overlap between the energy distribution o
 
 #### 2.2 Comparison of the Semiclassical Approach with the Peierls Substitution
 
-As a test of validity, the semiclassical approach can be compared to the Peierls substitution method. We begin by assuming the validity of the results obtained in the previous section, specifically that the Berry phase acquired by an electron orbiting a hole pocket corresponding to a contour $\bar{C}$ in momentum space is equal to $\pm \pi$ where the sign depends on the contour and on the electronic band. Note that there is always a contour with Berry phase equal to $+\pi$ at any energy in the range of interest. Hence, the Lifshitz-Onsager quantization rule [^11] implies for the allowed levels that, after some simplifications,
+As a test of validity, the semiclassical approach can be compared to the Peierls substitution method. We begin by assuming the validity of the results obtained in the previous section, specifically that the Berry phase acquired by an electron orbiting a hole pocket corresponding to a contour $\bar{C}$ in momentum space is equal to $\pm \pi$ where the sign depends on the contour and on the electronic band. Note that there is always a contour with Berry phase equal to $+\pi$ at any energy in the range of interest. Hence, the Lifshitz-Onsager quantization rule [\[11\]](#ref) implies for the allowed levels that, after some simplifications,
 ```math
 \frac{1}{2\chi}
 \frac{A(\bar{C}_n)}{[2\pi/a]^2}
@@ -269,20 +269,16 @@ The mean value and standard deviation of $\delta$ obtained for $\phi = \pm 1$ ar
 It thus confirms that the Berry phase accumulated by an electron orbiting a hole pocket according to the mean-field $\pi\textrm{LC}$ Hamiltonian equals $\pi$ with an uncertainty of order $0.02\pi$.
 
 
-### References
+## <a id="ref"/></a> References
 
-[^1]: C. M. Varma. Non-fermi-liquid states and pairing instability of a general model of copper oxide metals. _Phys. Rev. B_, 55:14554–14580, Jun 1997.
-[^2]: C. M. Varma. Pseudogap phase and the quantum-critical point in copper-oxide metals. _Phys. Rev. Lett._, 83:3538–3541, Oct 1999.
-[^3]: S. Bulut, A. P. Kampf, and W. A. Atkinson. Instability towards staggered loop currents in the three-orbital model for cuprate superconductors. _Phys. Rev. B_, 92:195140, Nov 2015.
-[^4]: G. Massarelli. Determination of berry’s phase in d-density-wave model of the pseudogap in the cuprates. Master’s thesis, McGill University, Montreal, 2016.
-[^5]: S. Chakravarty. Quantum oscillations and key theoretical issues in high temperature superconductors from the perspective of density waves. _Reports on Progress in Physics_, 74(2):022501, 2011.
-[^6]: M. S. Hybertsen, M. Schlu ̈ter, and N. E. Christensen. Calculation of coulomb-interaction parameters for La<sub>2</sub>CuO<sub>4</sub> using a constrained-density-functional approach. _Phys. Rev. B_, 39:9028–9041, May 1989.
-[^7]: C. Varma, S. Schmitt-Rink, and E. Abrahams. Charge transfer excitations and superconductivity in "ionic" metals. _Solid State Communications_, 62(10):681–685, 1987.
-[^8]: J. Townsend. _A Modern Approach to Quantum Mechanics_. University Science Books, 2012.
-[^9]: J. M. Luttinger. The effect of a magnetic field on electrons in a periodic potential. _Phys. Rev._, 84:814–817, Nov 1951.
-[^10]: J. Eun, Z. Wang, and S. Chakravarty. Quantum oscillations in yba2cu3o6+ from period-8 d-density wave order. _Proceedings of the National Academy of Sciences_, 109(33):13198–13203, 2012.
-[^11]: M. C. Chang. Chapter 9: Fermi surfaces and metals. Course Slides, Feb 2013. http://phy.ntnu.edu.tw/~changmc/Teach/SS/SS_note/chap09.pdf.
-
-
-
-
+1. C. M. Varma. Non-fermi-liquid states and pairing instability of a general model of copper oxide metals. _Phys. Rev. B_, 55:14554–14580, Jun 1997.
+2. C. M. Varma. Pseudogap phase and the quantum-critical point in copper-oxide metals. _Phys. Rev. Lett._, 83:3538–3541, Oct 1999.
+3. S. Bulut, A. P. Kampf, and W. A. Atkinson. Instability towards staggered loop currents in the three-orbital model for cuprate superconductors. _Phys. Rev. B_, 92:195140, Nov 2015.
+4. G. Massarelli. Determination of berry’s phase in d-density-wave model of the pseudogap in the cuprates. Master’s thesis, McGill University, Montreal, 2016.
+5. S. Chakravarty. Quantum oscillations and key theoretical issues in high temperature superconductors from the perspective of density waves. _Reports on Progress in Physics_, 74(2):022501, 2011.
+6. M. S. Hybertsen, M. Schlu ̈ter, and N. E. Christensen. Calculation of coulomb-interaction parameters for La<sub>2</sub>CuO<sub>4</sub> using a constrained-density-functional approach. _Phys. Rev. B_, 39:9028–9041, May 1989.
+7. C. Varma, S. Schmitt-Rink, and E. Abrahams. Charge transfer excitations and superconductivity in "ionic" metals. _Solid State Communications_, 62(10):681–685, 1987.
+8. J. Townsend. _A Modern Approach to Quantum Mechanics_. University Science Books, 2012.
+9. J. M. Luttinger. The effect of a magnetic field on electrons in a periodic potential. _Phys. Rev._, 84:814–817, Nov 1951.
+10. J. Eun, Z. Wang, and S. Chakravarty. Quantum oscillations in yba2cu3o6+ from period-8 d-density wave order. _Proceedings of the National Academy of Sciences_, 109(33):13198–13203, 2012.
+11. M. C. Chang. Chapter 9: Fermi surfaces and metals. Course Slides, Feb 2013. http://phy.ntnu.edu.tw/~changmc/Teach/SS/SS_note/chap09.pdf.
