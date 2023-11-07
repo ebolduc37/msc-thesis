@@ -377,8 +377,7 @@ delta = [np.mean(n_SC-np.round(n_SC)), np.std(n_SC-np.round(n_SC),ddof=1)]
 
 # Rounding of the mismatch in terms of the uncertainty
 dec = 0
-while (round(np.trunc(delta[1]*10**dec)) == 0):
-    dec += 1
+while (round(np.trunc(delta[1]*10**dec)) == 0): dec += 1
 delta = [round(delta[0], dec), round(delta[1], dec)]
 
 #-----------------------------------
