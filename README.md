@@ -192,12 +192,12 @@ To make the calculation more efficient, the elongated shape of the hole pocket a
 ![11_berry-curvature](https://github.com/ebolduc37/msc-thesis/assets/44382376/6c3e35db-0f61-4818-a7b1-965700d3b903)
 ![12_berry-curvature-zoom](https://github.com/ebolduc37/msc-thesis/assets/44382376/df9e9102-f8d3-46bc-8a57-17694e1519a3)
 
-Finally, we perform a numerical integration over the area of the hole pocket to obtain the Berry phase. The results are listed in the table below.
+Finally, we perform a numerical integration within the grid to obtain the Berry phase for momentum-space counterclockwise orbit $\bar{C}$ around the degeneracy point. The results are listed in the table below.
 
-| $\phi$ | $\gamma_-(C)/\pi$ | $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ |
-| :----: | :---------------: | :-------------------------------------: |
-| $+1$   | $99.4\\%$          | $0.6\\%$                                 |
-| $-1$   | $99.3\\%$          | $0.6\\%$                                 |
+| $\phi$ | $\gamma_-(\bar{C})/\pi$ | $\[1 + (\rho/\xi)^2 \]^{-\tfrac{1}{2}}$ |
+| :----: | :---------------------: | :-------------------------------------: |
+| $+1$   | $99.4\\%$               | $0.6\\%$                                |
+| $-1$   | $99.3\\%$               | $0.6\\%$                                |
 
 For both possible current patterns, a Berry phase nearly equal to $\pi$ is obtained, all within expectations: almost equal to $\pi$, but not exactly because of the delta function's weight that is lost outside of the grid. In fact, we obtain a total value of $\pi$ within the rounding of significant figures if we add the weight loss to the Berry phase. Unknown discretization errors may be at play in the small discrepancy.
 
@@ -233,18 +233,49 @@ Rotating the system by $\pi/4$ clockwise like in section 4.3.1 leads to magnetic
 
 ![13_energy-distribution-flip_1x1](https://github.com/ebolduc37/msc-thesis/assets/44382376/b482826a-3ed1-4d7c-9a78-07c9c5e2b235)
 
+An example of the energy distribution of the high-energy subspace where all states within $BZ_q$ are sorted by energy for $\chi = 1 / 1500$ is shown in the figure above. It mainly consists of flat levels except at energies where there are changes in the Fermi surface topology. More specifically, those changes occur at the minimum and maximum energies attained by the two highest energy bands in the non-magnetic regime along the border of the reduced Brillouin zone. Note that the density of flat levels—hence their total number—increases with $q$.
+
+On the one hand, there is only a small overlap between the energy distribution of the lower and higher energy bands. In particular, most of the energy range where the lower band forms the hole pockets is not overlapped with any other energy state, and the flat levels from this band are clearly visible. Even where there is an overlap, the flat levels of this particular band are distinguishable for high enough $q$ because of their distinct size, as seen in the figures further below. On the other hand, the energy range where the higher band forms the hole pockets is completely overlapped with the one where the electron pockets are formed. The flat levels from this electronic band for the hole pockets are thus impossible to distinguish.
+
 #### 2.2 Comparison of the Semiclassical Approach with the Peierls Substitution
+
+As a test of validity, the semiclassical approach can be compared to the Peierls substitution method. We begin by assuming the validity of the results obtained in the previous section, specifically that the Berry phase acquired by an electron orbiting a hole pocket corresponding to a contour $\bar{C}$ in momentum space is equal to $\pm \pi$ where the sign depends on the contour and on the electronic band. Note that there is always a contour with Berry phase equal to $+\pi$ at any energy in the range of interest. Hence, the Lifshitz-Onsager quantization rule implies for the allowed levels that, after some simplifications,
+```math
+\frac{1}{2\chi}
+\frac{A(\bar{C}_n)}{[2\pi/a]^2}
+= n
+,
+```
+where $A(\bar{C}_n)$ is the area enclosed by the contour level $n \in \mathbb{N}^0$ in momentum space $\bar{C}_n$. The last result is obtained through the semiclassical approach only. Comparing this approach with the Peierls substitution method is then possible by defining
+```math
+n_{SC} \equiv
+\frac{1}{2\chi}
+\frac{A(\bar{C}_{n_{PS}})}{[2\pi/a]^2}
+,
+```
+where $A(\bar{C}_ {n_ {PS}})$ is the area of a hole pocket in momentum space under no external magnetic field at the energy level of $n_{PS}$ obtained through the Peierls substitution. In such a way, a similarity between $n_{SC}$ and $n_{PS}$ over a range of values would signify that both approaches are consistent with one another and consequently confirm the prior assumption. Still, the mismatch between $n_{SC}$ and $n_{PS}$ can be quantified through $\delta \equiv n_{SC} - n_{PS}$. This value is in fact a measure of the difference from an exact Berry phase of $\pi$. More specifically, letting $\gamma_n(\bar{C}) = \pi − 2\pi\delta$ in (3.15) yields
+```math
+\frac{1}{2\chi}
+\frac{A(\bar{C}_n)}{[2\pi/a]^2}
+= n + \delta
+.
+```
+
+In such a way, $\delta$ or more explicitly $2\pi \delta$ may be used to obtain a bound on the Berry phase found from the mean-field $\pi\textrm{LC}$ Hamiltonian.
+
+The analysis was carried out for both possible current patterns under a typical parameter set with $\chi = 1/1500$, corresponding to $B \approx 36 T$. The resulting energy distribution and the numbering of the energy levels for $\phi = +1$ can be found in the figures below, where similar results are obtained for $\phi = −1$. To derive $n_{SC}$, the area was calculated numerically at the energy level of $n_{PS}$ for each level.
 
 ![14_energy-plateaux-top-flip_1x1](https://github.com/ebolduc37/msc-thesis/assets/44382376/b633c0f9-e3dd-4230-8b7c-5d57d4756416)
 ![15_energy-plateaux-bottom-flip_1x1](https://github.com/ebolduc37/msc-thesis/assets/44382376/d5b68235-881d-4cc1-9b0f-68d7c80740d9)
 
-
-
+The mean value and standard deviation of $\delta$ obtained for $\phi = \pm 1$ are listed in the table below. In particular, zero is within error with high precision, and there is an excellent agreement between $n_{SC}$ and $n_{PS}$ over an extensive range of values. Additionally, the largest standard deviation on $2\pi\delta$ is $0.016\pi$.
 
 | $\phi$ | $\delta$           |
 | :----: | :----------------: |
 | $+1$   | $-0.001 \pm 0.005$ |
-| $-1$   | $+0.001 \pm 0.008$    |
+| $-1$   | $+0.001 \pm 0.008$ |
+
+It thus confirms that the Berry phase accumulated by an electron orbiting a hole pocket according to the mean-field $\pi\textrm{LC}$ Hamiltonian equals $\pi$ with an uncertainty of order $0.02\pi$.
 
 
 
