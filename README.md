@@ -200,15 +200,15 @@ In quantum mechanics, an external magnetic field is typically introduced in equa
 ```math
 \boldsymbol{p}
 \rightarrow
-\boldsymbol{p} - q \boldsymbol{A}(\boldsymbol{r}),
+\boldsymbol{p} - Q \boldsymbol{A}(\boldsymbol{r}),
 ```
-where $q$ is the particle’s charge[\[8\]](#ref). However, the energy eigenstates of electrons in a crystal lattice are no longer the usual Bloch states, but _modified_ Bloch states instead as the initial discrete translational invariance of the Hamiltonian is now broken[\[9\]](#ref).
+where $Q$ is the particle’s charge[\[8\]](#ref). However, the energy eigenstates of electrons in a crystal lattice are no longer the usual Bloch states, but _modified_ Bloch states instead as the initial discrete translational invariance of the Hamiltonian is now broken[\[9\]](#ref).
 
 When the vector potential varies slowly over a lattice cell, the effect of the transformation is to add a phase factor dependent on the vector potential to the hopping terms of the Hamiltonian:
 ```math
 \hat{c}_{\boldsymbol{j}}^\dagger \hat{c}_{\boldsymbol{i}}
 \rightarrow
-\exp{\left[ 2\pi i \frac{q}{h} \int_{\boldsymbol{R}_\boldsymbol{i}}^{\boldsymbol{R}_\boldsymbol{j}} \boldsymbol{A}(\boldsymbol{r}) \cdot d\boldsymbol{r} \right]}
+\exp{\left[ 2\pi i \frac{Q}{h} \int_{\boldsymbol{R}_\boldsymbol{i}}^{\boldsymbol{R}_\boldsymbol{j}} \boldsymbol{A}(\boldsymbol{r}) \cdot d\boldsymbol{r} \right]}
 \hat{c}_{\boldsymbol{j}}^\dagger \hat{c}_{\boldsymbol{i}}
 ,
 ```
