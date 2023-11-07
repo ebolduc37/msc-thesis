@@ -223,16 +223,21 @@ When the vector potential varies slowly over a lattice cell, the effect of the t
 \hat{c}_{\boldsymbol{j}}^\dagger \hat{c}_{\boldsymbol{i}}
 ,
 ```
-where the path of the integral is by convention the shortest path from $\boldsymbol{R}_ \boldsymbol{i}$ to $\boldsymbol{R}_ \boldsymbol{j}$. This result can easily be derived from the path-integral formulation of quantum mechanics [48]: as the classical action changes through the redefinition of the canonical momentum, the amplitude of a path gets a phase factor from the line integral over the path.
+where the path of the integral is by convention the shortest path from $\boldsymbol{R}_ \boldsymbol{i}$ to $\boldsymbol{R}_ \boldsymbol{j}$. This result can easily be derived from the path-integral formulation of quantum mechanics [48]. As the classical action changes through the redefinition of the canonical momentum, the amplitude of a path gets a phase factor from the line integral over the path.
 
 According to the justification found at the end of the previous section, the gap amplitude is assumed to be approximately constant over the range of magnetic field magnitudes relevant to quantum oscillation experiments considered in this section. In such a way, all of the terms in the mean-field $\pi\textrm{LC}$ Hamiltonian are assumed to transform following the transformation above under a typical parameter set.
 
+Fortunately, the mean-field $\pi\textrm{LC}$ Hamiltonian can be diagonalized for the specific magnetic fields that make the modified hopping terms share the same periodicity. Under such fields, a _magnetic_ cell is defined. As derived in Appendix H of the [thesis](bolduc-2019-determination-of-the-berry-phase-in-the-staggered-loop-current-model-of-the-pseudogap-in-the-cuprates.pdf), the strength of an external constant magnetic field $\boldsymbol{B} = B\hat{\boldsymbol{z}}$ perpendicular to the CuO<sub>2</sub> plane which would allow diagonalization of our model is related to the dimensionless constant $\chi = eBa^2/\[2h\]$. Notice that $\chi = \Phi/\Phi_0$ for $\Phi = Ba^2/4$ the magnetic flux through one unit cell and $\Phi_0 = h/\[2e\]$ the magnetic flux quantum. By taking $a = 3.9\mathrm{Å}$, the strength of the magnetic field is $B \approx 5.4\chi \cdot 10^4 T$ in terms of $\chi$. In any case, the Hamiltonian can be diagonalized by transforming to momentum space _specifically_ when $\chi$ is a rational number. If we let $\chi = p/q$ be an irreducible fraction where $p \in \mathbb{Z}$ and $q \in \mathbb{N}$, the magnetic cell is composed of $2q$ unit cells in one of the diagonal directions. Therefore, a magnetic cell of many unit cells is required in order to have a magnetic field strength equivalent to what is found in experiments.
+
+Rotating the system by $\pi/4$ clockwise like in section 4.3.1 leads to magnetic cells elongated in the $y$-direction. Furthermore, the magnetic Brillouin zone $BZ_q$ associated with a system having $\chi = p/q$ is the rectangle $\[−\tfrac{\pi}{a}, \tfrac{\pi}{a}\] \times \[−\tfrac{\pi}{aq}, \tfrac{\pi}{aq}\]$. A few factors need to be taken into consideration when diagonalizing the Hamiltonian on a discrete grid in momentum space. First, the number of grid points in the $x$-direction has to be $q$ times greater than in the $y$-direction in order to have a square grid in momentum space. However, it is computationally expensive to take such a grid because of the increasing number of points as $q$ gets large. On top of this, the mean-field $\pi\textrm{LC}$ Hamiltonian matrix is a $6q \times 6q$ matrix and thus takes longer to diagonalize at any point as $q$ increases. Thankfully, taking a low-resolution rectangular grid is enough in flat-level regimes [29], which we are solely concerned with.
+
+![13_energy-distribution-flip_1x1](https://github.com/ebolduc37/msc-thesis/assets/44382376/b482826a-3ed1-4d7c-9a78-07c9c5e2b235)
+
 #### 2.2 Comparison of the Semiclassical Approach with the Peierls Substitution
 
-![13_energy-distribution-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/08137e6f-c9c0-480f-bdbc-f8cad5477f9e)
+![14_energy-plateaux-top-flip_1x1](https://github.com/ebolduc37/msc-thesis/assets/44382376/b633c0f9-e3dd-4230-8b7c-5d57d4756416)
+![15_energy-plateaux-bottom-flip_1x1](https://github.com/ebolduc37/msc-thesis/assets/44382376/d5b68235-881d-4cc1-9b0f-68d7c80740d9)
 
-![14_energy-plateaux-top-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/15fce462-498d-43d3-980a-5c078b4ed1d6)
-![15_energy-plateaux-bottom-flip](https://github.com/ebolduc37/msc-thesis/assets/44382376/9f57de6f-218b-4ce4-8822-d09f64f182f7)
 
 
 
